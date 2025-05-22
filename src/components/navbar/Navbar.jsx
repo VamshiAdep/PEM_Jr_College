@@ -16,6 +16,30 @@ const Navbar = () => {
 
     return (
         <div className="navbar-main-container">
+            <div className="admission-marquee">
+                <div className="marquee-wrapper">
+                    <div className="marquee">
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div className="marquee">
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
             <nav className="navbar">
                 <div className="navbar-title">
                     <div className='image-container'>
@@ -36,7 +60,7 @@ const Navbar = () => {
                         About Us
                         {isAboutDropdownOpen && (
                             <div className="dropdown-menu">
-                                <a href="#about-school" className="dropdown-item">About School</a>
+                                <a href="#AboutUs" className="dropdown-item">About School</a>
                                 <a href="#director-message" className="dropdown-item">Director's Message</a>
                                 <a href="#principal-message" className="dropdown-item">Principal's Message</a>
                                 <a href="#facility" className="dropdown-item">Facility</a>

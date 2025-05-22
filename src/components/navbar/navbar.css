@@ -35,6 +35,43 @@
     }
 }
 
+.admission-marquee {
+    width: 100%;
+    overflow: hidden;
+    background-color: #b30000;
+    color: #fff;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 2px 0;
+    position: relative;
+    top: 0;
+}
+
+.marquee-wrapper {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll 15s linear infinite;
+}
+
+.marquee {
+    display: inline-block;
+    padding-right: 50px;
+    font-weight: bold;
+}
+
+
+/* The animation moves the wrapper to left by half its width */
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
 /* Navbar */
 .navbar-main-container {
     width: 100%;
@@ -46,7 +83,7 @@
     /* justify-content: space-between; */
     align-items: center;
     background-color: #fff;
-    padding: 1rem 2rem;
+    padding: 0.3rem 2rem;
     color: var(--text-color);
     position: sticky;
     top: 0;
@@ -118,7 +155,7 @@
     color: var(--primary-color);
 }
 
-/* .dropdown-menu {
+.dropdown-menu {
     position: absolute;
     background: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -129,10 +166,11 @@
     flex-direction: column;
     min-width: 160px;
     animation: fadeInDown 0.3s ease-in-out;
-} */
+}
 
 .dropdown-item {
     padding: 0.5rem 1rem;
+    font-size: 12px;
     text-decoration: none;
     color: var(--text-color);
 }
@@ -143,6 +181,11 @@
 
 /* Tablet Styles */
 @media (min-width: 769px) and (max-width: 1024px) {
+    .marquee {
+        padding-right: 25px;
+        font-size: 12px;
+    }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -176,6 +219,12 @@
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+
+    .marquee {
+        padding-right: 20px;
+        font-size: 10px;
+    }
+
     .menu-icon {
         display: block;
     }
