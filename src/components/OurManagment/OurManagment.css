@@ -1,0 +1,254 @@
+.management-main-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    /* Add this */
+}
+
+.management-container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: #b30000;
+}
+
+.management-title {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.management-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #f9a825;
+}
+
+.large-members-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.regular-members-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.management-box {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    aspect-ratio: 1/1;
+    width: 160px;
+    height: 200px;
+}
+
+.management-box.large {
+    flex: 1 1 calc(33.33% - 2rem);
+    /* Subtracting gap */
+    max-width: 200px;
+    height: 250px;
+}
+
+.management-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.image-logo-container {
+    width: 100%;
+    height: 100%;
+}
+
+.management-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tsss-main-container {
+    width: 25%;
+    position: sticky;
+    /* Changed from fixed to sticky */
+    top: 0;
+    align-self: flex-start;
+    /* Add this */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    height: 100vh;
+}
+
+.logo-image-container {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1rem;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.organization-name {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    color: #f9a825;
+}
+
+/* Responsive Design */
+@media (min-width:769) and (max-width: 1024px) {
+    .management-container {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .regular-members-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .management-box.large {
+        flex: 1 1 calc(33.33% - 1rem);
+        max-width: 150px;
+        height: 200px;
+    }
+
+    .large-members-grid {
+        gap: 1rem;
+    }
+
+    .management-box {
+        width: 140px;
+        height: 180px;
+    }
+
+    .management-box.large {
+        width: 180px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .management-container {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .management-main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tsss-main-container {
+        width: 100%;
+        position: relative;
+        top: 0;
+        height: auto;
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+    }
+
+    .logo-image-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    .management-box.large {
+        width: 100px;
+        height: 150px;
+    }
+
+    .organization-name {
+        font-size: 1.2rem;
+    }
+
+    .regular-members-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
+    .management-box {
+        width: 120px;
+        height: 160px;
+    }
+
+    .large-members-grid {
+        gap: 0.5rem;
+    }
+
+    .management-box.large {
+        flex: 1 1 calc(33.33% - 0.5rem);
+        max-width: 130px;
+        height: 180px;
+    }
+
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .management-container {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .management-title {
+        font-size: 2rem;
+    }
+
+    .regular-members-grid {
+        grid-template-columns: (3, 1fr);
+    }
+
+    .large-members-grid {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .management-box.large {
+        width: 100px;
+        height: 150px;
+    }
+
+    .management-box {
+        width: 100px;
+        height: 140px;
+    }
+
+    .management-box.large {
+        width: 130px;
+        height: 180px;
+    }
+
+    .logo-image-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .organization-name {
+        font-size: 1rem;
+    }
+}

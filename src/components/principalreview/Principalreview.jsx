@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from '../navbar/Navbar';
 import './pincipalreview.css';
-// C:\Users\SUPERCOMPUTERS\Desktop\school-page\PEM_Jr_College\src\components\principalreview\
 
 
 const Principalreview = () => {
@@ -33,21 +32,20 @@ const Principalreview = () => {
 
     return (
         <div className='main-container'>
-            <div><Navbar /></div>
             <section className='principals-section'>
                 <h1 className='section-titile'>Meet Our Principals</h1>
                 <div className="card-container">
                     {Principals.map((principal, index) => (
                         <div key={index} className="principal-card">
-                            <img className='profile-pic' src={principal.image} alt={principal.name} />
+                            <div className='profile-pic'>
+                                <img src={principal.image} alt={principal.name} />
+                            </div>
                             <h2 className='name'>{principal.name}</h2>
                             <p className='position'>{principal.positon}</p>
                             <p className='message'>{principal.message}</p>
                         </div>
                     ))}
                 </div>
-
-
             </section>
 
         </div>
