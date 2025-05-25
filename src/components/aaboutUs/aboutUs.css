@@ -8,9 +8,10 @@
     padding: 3rem 1rem;
     max-width: 93%;
     margin: 0 auto;
+    margin-top: 20px;
     font-family: 'Segoe UI', sans-serif;
     animation: fadeIn 0.8s ease-in-out;
-    height: 100vh;
+    height: 95vh;
 }
 
 .about-header {
@@ -144,7 +145,7 @@
 @media(max-width: 768px) {
 
     .about-page {
-        height: 80vh;
+        height: 65vh;
     }
 
     .about-header h1 {

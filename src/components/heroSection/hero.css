@@ -227,7 +227,7 @@
 /* Mobiles Styles */
 @media (max-width: 768px) {
     .hero-section {
-        height: 70vh;
+        height: 60vh;
     }
 
     .hero-title {
@@ -237,32 +237,32 @@
     }
 
     .carousel-overlay-container {
-        padding: 0 3%;
+        padding: 0 2%;
     }
 
     .admission-form-container {
-        padding: 15px;
+        padding: 2px;
     }
 
     .admission-form {
-        padding: 15px 10px;
+        padding: 8px 10px;
     }
 
     .admission-form h2 {
         font-size: 1rem;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .admission-form input,
     .admission-form select {
-        padding: 5px 8px;
-        margin: 3px 0;
+        padding: 3px 5px;
+        margin: 2px 0;
         border-radius: 6px;
         font-size: 0.6rem;
     }
 
     .admission-form button {
-        padding: 5px;
+        padding: 4px;
     }
 
     .dot {
