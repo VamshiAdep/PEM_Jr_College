@@ -89,7 +89,7 @@ const Navbar = () => {
                         )}
                     </div>
                     <a href="#admissions" className="nav-link" onClick={closeMenu}>Admissions</a>
-                    <a href="#contact" className="nav-link" onClick={closeMenu}>Contact Us</a>
+                    <a href="#ContactUs" className="nav-link" onClick={closeMenu}>Contact Us</a>
                 </div>
             </nav>
         </div>
