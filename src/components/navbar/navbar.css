@@ -1,3 +1,4 @@
+/* Updated CSS */
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +7,10 @@
 
 :root {
     --primary-color: #d32f2f;
-    /* red */
     --accent-color: #f9a825;
-    /* gold */
     --text-color: #000;
 }
 
-/* Keyframes */
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -22,16 +20,6 @@
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    from {
-        right: -100%;
-    }
-
-    to {
-        right: 0;
     }
 }
 
@@ -50,7 +38,7 @@
 .marquee-wrapper {
     display: flex;
     width: max-content;
-    animation: marquee-scroll 15s linear infinite;
+    animation: marquee-scroll 20s linear infinite;
 }
 
 .marquee {
@@ -59,8 +47,6 @@
     font-weight: bold;
 }
 
-
-/* The animation moves the wrapper to left by half its width */
 @keyframes marquee-scroll {
     0% {
         transform: translateX(0);
@@ -71,16 +57,14 @@
     }
 }
 
-
-/* Navbar */
 .navbar-main-container {
     width: 100%;
     background-color: #fff;
+    position: relative;
 }
 
 .navbar {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     background-color: #fff;
     padding: 0.3rem 2rem;
@@ -91,7 +75,6 @@
     animation: fadeInDown 0.6s ease-in-out;
 }
 
-/* Title */
 .navbar-title {
     display: flex;
     width: 50%;
@@ -119,20 +102,17 @@
     font-weight: 700;
 }
 
-.navbar-address {
+.navbar-adress {
     font-size: 1rem;
 }
 
-
-
-/* Menu Icon */
 .menu-icon {
     display: none;
     font-size: 2rem;
     cursor: pointer;
+    z-index: 1001;
 }
 
-/* Links */
 .navbar-links {
     display: flex;
     gap: 2rem;
@@ -149,6 +129,7 @@
     text-decoration: none;
     transition: color 0.3s;
     position: relative;
+    cursor: pointer;
 }
 
 .nav-link:hover {
@@ -177,6 +158,100 @@
 
 .dropdown-item:hover {
     background-color: #f5f5f5;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .marquee {
+        padding-right: 20px;
+        font-size: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 5px 10px;
+    }
+
+    .navbar-main-container {
+        width: 100%;
+    }
+
+    .navbar-title {
+        width: auto;
+    }
+
+    .navbar-brand {
+        font-size: 14px;
+    }
+
+    .navbar-adress {
+        font-size: 8px;
+    }
+
+    .image-container {
+        height: 40px;
+        width: 40px;
+    }
+
+    .navbar-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 60%;
+        background-color: #fff;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        transition: left 0.3s ease;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .navbar-links.show {
+        left: 0;
+    }
+
+    .navbar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .navbar-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+        animation: none;
+    }
+
+    .dropdown-item {
+        padding: 0.5rem 0;
+    }
 }
 
 /* Tablet Styles */
@@ -214,56 +289,4 @@
         font-size: 1.1rem;
         padding: 0.5rem 0;
     }
-}
-
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-
-    .marquee {
-        padding-right: 20px;
-        font-size: 10px;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    .navbar {
-        justify-content: space-between;
-        padding: 5px 10px;
-    }
-
-    .navbar-main-container {
-        width: 100%;
-    }
-
-    .navbar-title {
-        width: 100%;
-    }
-
-    .navbar-brand {
-        width: 100%;
-        font-size: 14px;
-    }
-
-    .navbar-adress {
-        width: 100%;
-        font-size: 8px;
-    }
-
-    .navbar-links {
-        display: none;
-    }
-
-    .image-container {
-        height: 40px;
-        width: 40px;
-    }
-
-    .image {
-        height: 100%;
-        object-fit: contain;
-    }
-
 }

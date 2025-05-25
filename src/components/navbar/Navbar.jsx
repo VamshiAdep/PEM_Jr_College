@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import logo from '../assets/TSSS-Logo.jpg';
+import { href } from 'react-router-dom';
 
 const Navbar = () => {
     const [isAboutDropdownOpen, setAboutDropdownOpen] = useState(false);
     const [isAcademicsDropdownOpen, setAcademicsDropdownOpen] = useState(false);
+    const [isMenuOpen, setMenuOpen] = useState(false);
 
     const toggleAboutDropdown = () => {
         setAboutDropdownOpen(!isAboutDropdownOpen);
@@ -12,6 +14,14 @@ const Navbar = () => {
 
     const toggleAcademicsDropdown = () => {
         setAcademicsDropdownOpen(!isAcademicsDropdownOpen);
+    };
+
+    const toggleMenu = () => {
+        setMenuOpen(!isMenuOpen);
+    };
+
+    const closeMenu = () => {
+        setMenuOpen(false);
     };
 
     return (
@@ -46,40 +56,40 @@ const Navbar = () => {
                         <img className='image' src={logo} alt="Logo" />
                     </div>
                     <div className='text-container'>
-                        <h5 href="#home" className="navbar-brand">P.E.M High School & Jr College</h5>
+                        <h5 href="/" className="navbar-brand">P.E.M High School & Jr College</h5>
                         <p className="navbar-adress">Near Fehnegaon, Kamatghar, Bhiwandi, Thane 421302</p>
                     </div>
                 </div>
-                <div className="menu-icon" >
+                <div className="menu-icon" onClick={toggleMenu}>
                     ☰
                 </div>
-
-                <div className="navbar-links">
-                    <a href="#home" className="nav-link">Home</a>
-                    <div className="nav-link" onMouseEnter={toggleAboutDropdown} onMouseLeave={toggleAboutDropdown}>
+                <div className={`navbar-overlay ${isMenuOpen ? 'active' : ''}`} onClick={closeMenu}></div>
+                <div className={`navbar-links ${isMenuOpen ? 'show' : ''}`}>
+                    <a href="/" className="nav-link" onClick={closeMenu}>Home</a>
+                    <div className="nav-link" onMouseEnter={toggleAboutDropdown} onMouseLeave={toggleAboutDropdown} >
                         About Us
                         {isAboutDropdownOpen && (
                             <div className="dropdown-menu">
-                                <a href="#AboutUs" className="dropdown-item">About School</a>
-                                <a href="#director-message" className="dropdown-item">Director's Message</a>
-                                <a href="#principal-message" className="dropdown-item">Principal's Message</a>
-                                <a href="#facility" className="dropdown-item">Facility</a>
+                                <a href="#aboutus" className="dropdown-item" onClick={closeMenu}>About School</a>
+                                <a href="/management" className="dropdown-item" onClick={closeMenu}>Director's Message</a>
+                                <a href="/OurPrincipalsView" className="dropdown-item" onClick={closeMenu}>Principal's Message</a>
+                                <a href="#facility" className="dropdown-item" onClick={closeMenu}>Facility</a>
                             </div>
                         )}
                     </div>
-                    <div className="nav-link" onMouseEnter={toggleAcademicsDropdown} onMouseLeave={toggleAcademicsDropdown}>
+                    <div className="nav-link" onMouseEnter={toggleAcademicsDropdown} onMouseLeave={toggleAcademicsDropdown} >
                         Academics
                         {isAcademicsDropdownOpen && (
                             <div className="dropdown-menu">
-                                <a href="#curriculum" className="dropdown-item">Curriculum</a>
-                                <a href="#toppers" className="dropdown-item">Toppers</a>
-                                <a href="#circulars" className="dropdown-item">Circulars</a>
-                                <a href="#newsletter" className="dropdown-item">Newsletter</a>
+                                <a href="#curriculum" className="dropdown-item" onClick={closeMenu}>Curriculum</a>
+                                <a href="#toppers" className="dropdown-item" onClick={closeMenu}>Toppers</a>
+                                <a href="#circulars" className="dropdown-item" onClick={closeMenu}>Circulars</a>
+                                <a href="#newsletter" className="dropdown-item" onClick={closeMenu}>Newsletter</a>
                             </div>
                         )}
                     </div>
-                    <a href="#admissions" className="nav-link">Admissions</a>
-                    <a href="#contact" className="nav-link">Contact Us</a>
+                    <a href="#admissions" className="nav-link" onClick={closeMenu}>Admissions</a>
+                    <a href="#contact" className="nav-link" onClick={closeMenu}>Contact Us</a>
                 </div>
             </nav>
         </div>
