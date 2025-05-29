@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section-container">
           <div className="footer-section-about">
-            <h1>School Name</h1>
+            <h1>P.E.M High School & Jr College</h1>
             <p>Shaping the future through education and excellence. Join us in building a better tomorrow.</p>
             <div className="social-icons">
               <a href="#"><FaFacebook /></a>
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          &copy; {new Date().getFullYear()} School Name. All rights reserved.
+          &copy; {new Date().getFullYear()} P.E.M High School & Jr College. All rights reserved.
         </div>
       </div>
     </footer>
