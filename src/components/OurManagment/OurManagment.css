@@ -31,21 +31,33 @@
 
 .our-management__title {
     font-size: 2.5rem;
-    color: #fff;
-    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #d00000;
+    background: linear-gradient(to right, #f9a825, #fff600, #f9a825);
+    padding: 10px 40px;
+    border-radius: 50px;
     position: relative;
     display: inline-block;
+    text-align: center;
 }
 
+.our-management__title::before,
 .our-management__title::after {
     content: '';
     position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 3px;
+    top: 50%;
+    width: 40px;
+    height: 2px;
     background-color: #f9a825;
+    transform: translateY(-50%);
+}
+
+.our-management__title::before {
+    left: -50px;
+}
+
+.our-management__title::after {
+    right: -50px;
 }
 
 .committee__title {
