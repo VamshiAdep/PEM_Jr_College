@@ -31,7 +31,7 @@ const ContactUs = () => {
 
                     <div className="info-block">
                         <strong>📧 EMAIL:</strong>
-                        <p>pemhighschool&jrcollege@gm.com</p>
+                        <p>pemschool123@gmail.com</p>
                     </div>
 
                     <div className="info-block">

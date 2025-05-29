@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '../navbar/Navbar';
 import './pincipalreview.css';
+import SecondaryHM from '../assets/SecondaryHM.png'
 
 
 const Principalreview = () => {
@@ -12,10 +12,10 @@ const Principalreview = () => {
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKuoW405uqrTQc4t9qDYQiFEnXrWrYEpa7Zw&s",
         },
         {
-            name: "Ms. Priyanka ",
-            positon: "vice principal",
+            name: "MRS. Vidya Ghorpade",
+            positon: "Principal-Secondary Section",
             message: "I strive to create a supportive and engaging learning environment for our students.",
-            image: "https://www.arvindgavalipharmacycollege.com/uploads/departmental_faculties/1396052684_1670397587.jpg",
+            image: SecondaryHM,
         },
         {
             name: "Mr. Rajesh Verma",
