@@ -71,7 +71,7 @@ const Navbar = () => {
                         {isAboutDropdownOpen && (
                             <div className="dropdown-menu">
                                 <a href="#aboutus" className="dropdown-item" onClick={closeMenu}>About School</a>
-                                <a href="/management" className="dropdown-item" onClick={closeMenu}>Director's Message</a>
+                                <a href="/management" className="dropdown-item" onClick={closeMenu}>Our Management</a>
                                 <a href="/OurPrincipalsView" className="dropdown-item" onClick={closeMenu}>Principal's Message</a>
                                 <a href="#facility" className="dropdown-item" onClick={closeMenu}>Facility</a>
                             </div>
@@ -88,7 +88,6 @@ const Navbar = () => {
                             </div>
                         )}
                     </div>
-                    <a href="#admissions" className="nav-link" onClick={closeMenu}>Admissions</a>
                     <a href="#ContactUs" className="nav-link" onClick={closeMenu}>Contact Us</a>
                 </div>
             </nav>
