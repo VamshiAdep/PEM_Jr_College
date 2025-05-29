@@ -1,74 +1,165 @@
 import React from 'react';
 import './OurManagment.css';
-import logo from '../assets/TSSS-Logo.jpg';
-import KundenPurushottam from '../assets/trusteeImages/KundenPurushottam.png'
-import BhairiNiskham from '../assets/trusteeImages/BhairiNiskham.png'
-import BhairiGangadhar from '../assets/trusteeImages/BhairiGangadhar.png'
-import RamaswamiRamayya from '../assets/trusteeImages/RamaswamiRamayya.png'
-import GajengiKrishna from '../assets/trusteeImages/GajengiKrishna.png'
-import KalyadapuBhumesh from '../assets/trusteeImages/KalyadapuBhumesh.png'
-import GandurLaxminarayana from '../assets/trusteeImages/GandurLaxminarayana.png'
-import ManchalaShankar from '../assets/trusteeImages/ManchalaShankar.png'
-import KodamRajaiah from '../assets/trusteeImages/KodamRajaiah.png'
-import BolliSatyanarayan from '../assets/trusteeImages/BolliSatyanarayan.png'
-import ChennaDevarajam from '../assets/trusteeImages/ChennaDevarajam.png'
-import SamalRavindra from '../assets/trusteeImages/SamalRavindra.png'
-import PamuManohar from '../assets/trusteeImages/PamuManohar.png'
+import KundenPurushottam from '../assets/trusteeImages/KundenPurushottam1.png';
+import BhairiNiskham from '../assets/trusteeImages/BhairiNiskham1.png';
+import BhairiGangadhar from '../assets/trusteeImages/BhairiGangadhar1.png';
+import RamaswamiRamayya from '../assets/trusteeImages/RamaswamiRamayya1.png';
+import GajengiKrishna from '../assets/trusteeImages/GajengiKrishna1.png';
+import KalyadapuBhumesh from '../assets/trusteeImages/KalyadapuBhumesh1.png';
+import GandurLaxminarayana from '../assets/trusteeImages/GandurLaxminarayana1.png';
+import ManchalaShankar from '../assets/trusteeImages/ManchalaShankar1.png';
+import KodamRajaiah from '../assets/trusteeImages/KodamRajaiah1.png';
+import BolliSatyanarayan from '../assets/trusteeImages/BolliSatyanarayan1.png';
+import ChennaDevarajam from '../assets/trusteeImages/ChennaDevarajam1.png';
+import SamalRavindra from '../assets/trusteeImages/SamalRavindra1.png';
+import PamuManohar from '../assets/trusteeImages/PamuManohar1.png';
+import tributeImage from '../assets/trusteeImages/tributeImage.png';
 
 const OurManagement = () => {
-    const managementTeam = [
-        { id: 1, image: RamaswamiRamayya, isLarge: true },
-        { id: 2, image: GajengiKrishna, isLarge: true },
-        { id: 3, image: KundenPurushottam, isLarge: true },
-        { id: 4, image: KalyadapuBhumesh, isLarge: false },
-        { id: 5, image: GandurLaxminarayana, isLarge: false },
-        { id: 6, image: PamuManohar, isLarge: false },
-        { id: 7, image: ManchalaShankar, isLarge: false },
-        { id: 8, image: KodamRajaiah, isLarge: false },
-        { id: 9, image: BolliSatyanarayan, isLarge: false },
-        { id: 10, image: BhairiNiskham, isLarge: false },
-        { id: 11, image: ChennaDevarajam, isLarge: false },
-        { id: 12, image: SamalRavindra, isLarge: false },
-        { id: 13, image: BhairiGangadhar, isLarge: false },
-    ];
-
-    const largeMembers = managementTeam.filter(member => member.isLarge);
-    const regularMembers = managementTeam.filter(member => !member.isLarge);
-
     return (
-        <div className='management-main-container'>
-            <div className="management-container">
-                <h1 className="management-title">Our Management</h1>
+        <div className="our-management">
+            <div className="our-management__wrapper">
+                <h1 className="our-management__title">Our Management</h1>
 
-                {/* Large members row */}
-                <div className="large-members-grid">
-                    {largeMembers.map((member) => (
-                        <div key={member.id} className="management-box large">
-                            <div className="image-logo-container">
-                                <img src={member.image} alt={`Management member ${member.id}`} className="management-image" />
-                            </div>
-                        </div>
-                    ))}
+                <div className='tribute-image-container'>
+                    <div className='tribute-image'>
+                        <img src={tributeImage} alt="tributeImage" />
+                    </div>
                 </div>
 
-                {/* Regular members grid */}
-                <div className="regular-members-grid">
-                    {regularMembers.map((member) => (
-                        <div key={member.id} className={`management-box ${member.id === 13 ? 'hide-on-mobile' : ''}`}>
-                            <div className="image-logo-container ">
-                                <img src={member.image} alt={`Management member ${member.id}`} className="management-image" />
+                {/* Trustee Committee */}
+                <section className="committee">
+                    <h2 className="committee__title">Trustee Committee</h2>
+                    <div className="committee__grid">
+                        <div className="committee__member-container">
+                            <div className="committee__member_card">
+                                <div className="committee__member">
+                                    <img src={RamaswamiRamayya} alt="Ramaswami Ramayya" className="committee__image" />
+                                </div>
+                                <p className='member-name'>Shri. Bhairi Ramswami Ramaiah</p>
+                                <p className='member-position'>Chief Trustee</p>
+                            </div>
+                            <div className="committee__member_card">
+                                <div className="committee__member">
+                                    <img src={GajengiKrishna} alt="Gajengi Krishna" className="committee__image" />
+                                </div>
+                                <p className='member-name'>Shri. Ganjengi Krishna Rajaiah</p>
+                                <p className='member-position'>Trustee</p>
+                            </div>
+                            <div className="committee__member_card">
+                                <div className="committee__member">
+                                    <img src={PamuManohar} alt="Pamu Manohar" className="committee__image" />
+                                </div>
+                                <p className='member-name'>Shri. Dr. Pamu Manohar Somayya</p>
+                                <p className='member-position'>Trustee</p>
                             </div>
                         </div>
-                    ))}
-                </div>
-            </div>
-            <div className='tsss-main-container'>
-                <div className='logo-image-container'>
-                    <img className='image' src={logo} alt="tsss logo" />
-                </div>
-                <div className="logo-container">
-                    <h2 className="organization-name">TELUGU SAMAJ SHIKSHAN SANSTHA</h2>
-                </div>
+                        <div className="committee__member-container">
+                            <div className="committee__member_card">
+                                <div className="committee__member">
+                                    <img src={KundenPurushottam} alt="Kunden Purushottam" className="committee__image" />
+                                </div>
+                                <p className='member-name'>Shri. Kunden Purushottam Bhumaiah</p>
+                                <p className='member-position'>Trustee</p>
+                            </div>
+                            <div className="committee__member_card">
+                                <div className="committee__member">
+                                    <img src={KalyadapuBhumesh} alt="Kalyadapu Bhumesh" className="committee__image" />
+                                </div>
+                                <p className='member-name'>Shri. Kalyadapu Bhumesh Rajaiah</p>
+                                <p className='member-position'>Trustee</p>
+                            </div>
+                            <div className="committee__member_card">
+                                <div className="committee__member">
+                                    <img src={GandurLaxminarayana} alt="Gandur Laxminarayana" className="committee__image" />
+                                </div>
+                                <p className='member-name'>Shri. Gandur Laxminarayana Ramulu</p>
+                                <p className='member-position'>Chief Trustee</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Management Committee */}
+                <section className="committee">
+                    <h2 className="committee__title">Management Committee</h2>
+                    <div className="committee__grid">
+                        <div className="committee__member-container">
+                            <div className="committee__member_card">
+                                <div className="committee__member">
+                                    <img src={KalyadapuBhumesh} alt="Kalyadapu Bhumesh" className="committee__image" />
+                                </div>
+                                <p className='member-name'>Shri. Kalyadapu Bhumesh Rajaiah</p>
+                                <p className='member-position'>President</p>
+                            </div>
+                            <div className="committee__member_card">
+                                <div className="committee__member">
+                                    <img src={BolliSatyanarayan} alt="Bolli Satyanarayan" className="committee__image" />
+                                </div>
+                                <p className='member-name'>Shri. Dr. Bolli Satyanarayana Narshaiah</p>
+                                <p className='member-position'>Treasurer</p>
+                            </div>
+                            <div className="committee__member_card">
+                                <div className="committee__member">
+                                    <img src={ManchalaShankar} alt="Manchala Shankar" className="committee__image" />
+                                </div>
+                                <p className='member-name'>Shri. Manchala Shankar Mallesham</p>
+                                <p className='member-position'>Secretary</p>
+                            </div>
+
+                        </div>
+                        <div className="committee__member-container">
+                            <div className="committee__member_card">
+                                <div className="committee__member">
+                                    <img src={KodamRajaiah} alt="Kodam Rajaiah" className="committee__image" />
+                                </div>
+                                <p className='member-name'>Shri. Kodam Rajaiah Nampelli</p>
+                                <p className='member-position'>Jt. Secretary</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                {/* School Committee */}
+                <section className="committee">
+                    <h2 className="committee__title">School Committee</h2>
+                    <div className="committee__grid">
+                        <div className="committee__member-container">
+                            <div className="committee__member_card">
+                                <div className="committee__member">
+                                    <img src={BhairiNiskham} alt="Bhairi Niskham" className="committee__image" />
+                                </div>
+                                <p className='member-name'>Shri. Bhairi Nishkam Ramaswami</p>
+                                <p className='member-position'>Chairman</p>
+                            </div>
+                            <div className="committee__member_card">
+                                <div className="committee__member">
+                                    <img src={ChennaDevarajam} alt="Chenna Devarajam" className="committee__image" />
+                                </div>
+                                <p className='member-name'>Shri. Chenna Devarajam Hanumanthu</p>
+                                <p className='member-position'>Vice Chairman</p>
+                            </div>
+                            <div className="committee__member_card">
+                                <div className="committee__member committee__member--hide-mobile">
+                                    <img src={SamalRavindra} alt="Samal Ravindra" className="committee__image" />
+                                </div>
+                                <p className='member-name'>Shri. Samal Ravindra Veeramallu</p>
+                                <p className='member-position'>Secretary</p>
+                            </div>
+                        </div>
+                        <div className="committee__member-container">
+
+                            <div className="committee__member_card">
+                                <div className="committee__member">
+                                    <img src={BhairiGangadhar} alt="Bhairi Gangadhar" className="committee__image" />
+                                </div>
+                                <p className='member-name'>Shri. Bhairi Gangadhar Laxman</p>
+                                <p className='member-position'>Member</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     );
