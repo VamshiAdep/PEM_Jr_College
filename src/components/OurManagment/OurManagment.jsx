@@ -14,6 +14,10 @@ import ChennaDevarajam from '../assets/trusteeImages/ChennaDevarajam1.png';
 import SamalRavindra from '../assets/trusteeImages/SamalRavindra1.png';
 import PamuManohar from '../assets/trusteeImages/PamuManohar1.png';
 import tributeImage from '../assets/trusteeImages/tributeImage.png';
+import MamidalaMallesham from '../assets/trusteeImages/MamidalaMallesham.png';
+import AnkamShankar from '../assets/trusteeImages/AnkamShankar.png';
+import LaxmanBallaya from '../assets/trusteeImages/LaxmanBallaya.png';
+import AmbadasBuchayya from '../assets/trusteeImages/AmbadasBuchayya.png';
 
 const OurManagement = () => {
     return (
@@ -21,11 +25,40 @@ const OurManagement = () => {
             <div className="our-management__wrapper">
                 <h1 className="our-management__title">Our Management</h1>
 
-                <div className='tribute-image-container'>
-                    <div className='tribute-image'>
-                        <img src={tributeImage} alt="tributeImage" />
+                {/* Tribute Committee */}
+                <section className="committee">
+                    <h2 className="committee__title">Tribute To</h2>
+                    <div className="committee__member-container">
+                        <div className="committee__member_card">
+                            <div className="committee__member">
+                                <img src={LaxmanBallaya} alt="Laxman Ballaya" className="committee__image" />
+                            </div>
+                            <p className='member-name'>Late. Laxman Ballaya Bhairi</p>
+                            <p className='member-position'>Chief Trustee</p>
+                        </div>
+                        <div className="committee__member_card">
+                            <div className="committee__member">
+                                <img src={AmbadasBuchayya} alt="Ambadas Buchayya" className="committee__image" />
+                            </div>
+                            <p className='member-name'>Late. Ambadas Buchayya Dasi</p>
+                            <p className='member-position'>Trustee</p>
+                        </div>
+                        <div className="committee__member_card">
+                            <div className="committee__member">
+                                <img src={MamidalaMallesham} alt="Mamidala Mallesham" className="committee__image" />
+                            </div>
+                            <p className='member-name'>Late. Mamidala Mallesham Lingaiah</p>
+                            <p className='member-position'>Member</p>
+                        </div>
+                        <div className="committee__member_card">
+                            <div className="committee__member">
+                                <img src={AnkamShankar} alt="Ankam Shankar" className="committee__image" />
+                            </div>
+                            <p className='member-name'>Late. Ankam Shankar Veeraiah</p>
+                            <p className='member-position'>Vice President</p>
+                        </div>
                     </div>
-                </div>
+                </section>
 
                 {/* Trustee Committee */}
                 <section className="committee">
