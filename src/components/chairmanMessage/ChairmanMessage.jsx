@@ -1,4 +1,3 @@
-import React from 'react'
 import BhairiNiskham from '../assets/trusteeImages/BhairiNiskham1.png';
 import './chairmanmessage.css';
 
@@ -16,7 +15,7 @@ export const ChairmanMessage = () => {
           <p className='member-position1'>Chairman</p>
         </div>
         <div className='chairman_messahe-conatiner'>
-          <h5 className='chairman_name' >chairman message</h5>
+          <h5 className='chairman_name' >Chairman message</h5>
           <h3 className='chairman_name1'>Shri. Bhairi Nishkam Ramaswami</h3>
           <p className='chairmain-message-text'>
             Dear Students, Parents, and Well-Wishers,
@@ -38,7 +37,7 @@ export const ChairmanMessage = () => {
           <p className='chairmain-message-text'>
             Warm regards,
             <br />
-            [Chairman's Name]
+            Bhairi Nishkam Ramaswami
             <br />
             Chairman, Telugu Samaj Shikshan Sanstha (TSSS)
             <br />
