@@ -1,7 +1,7 @@
 import React from 'react';
 import './pincipalreview.css';
 import SecondaryHM from '../assets/SecondaryHM.png'
-
+import More from'../assets/More.png'
 
 const Principalreview = () => {
     const Principals = [
@@ -14,14 +14,14 @@ const Principalreview = () => {
         {
             name: "MRS. Vidya Ghorpade",
             positon: "Principal-Secondary Section",
-            message: "I strive to create a supportive and engaging learning environment for our students.",
+            message: "We cannot always prepare a better future for our children but we can always prepare our children for a better future.",
             image: SecondaryHM,
         },
         {
-            name: "Mr. Rajesh Verma",
-            positon: "junior principal",
+            name: "Mr. More",
+            positon: "College principal",
             message: "Committed to academic excellence and holistic development of every student.",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREHJyxAtXMe70pehbt9QaBU6bgV8vif4tYY0InQDbtMZrEmK5Y6BWuPLQm8IQSarHJX8w&usqp=CAU"
+            image:More ,
         },
 
     ];

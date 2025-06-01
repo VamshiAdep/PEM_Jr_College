@@ -5,6 +5,9 @@ import Footer from './components/footer/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Principalreview from './components/principalreview/Principalreview';
+import { ChairmanMessage } from './components/chairmanMessage/ChairmanMessage';
+
+
 
 const App = () => {
   return (
@@ -15,6 +18,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/management" element={<OurManagement />} />
         <Route path="/OurPrincipalsView" element={<Principalreview />} />
+        <Route path="/ChairmanMessage" element={<ChairmanMessage />} />
+
       </Routes>
 
       <Footer />

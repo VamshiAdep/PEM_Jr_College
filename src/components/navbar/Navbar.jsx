@@ -97,7 +97,7 @@ const Navbar = () => {
                                 <div className="dropdown-menu">
                                     <a href="#aboutus" className="dropdown-item" onClick={closeMenu}>About School</a>
                                     <a href="/management" className="dropdown-item" onClick={closeMenu}>Our Management</a>
-                                    <a href="#Chairman'sMesssage" className="dropdown-item" onClick={closeMenu}>Chairman's Messsage</a>
+                                    <a href="/ChairmanMessage" className="dropdown-item" onClick={closeMenu}>Chairman's Messsage</a>
                                     <a href="/OurPrincipalsView" className="dropdown-item" onClick={closeMenu}>Principal's Desk</a>
                                     <a href="#facility" className="dropdown-item" onClick={closeMenu}>P.E.M. Intiatives</a>
                                     <a href="#Awards" className="dropdown-item" onClick={closeMenu}>Awards</a>
