@@ -89,12 +89,14 @@ nav {
     width: 100%;
     padding: 1rem 2rem;
     background-color: #fff;
+    animation: fadeInDown 1s;
 }
 
 .navbar-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* max-width: 1200px; */
     width: 100%;
 }
 
@@ -155,6 +157,7 @@ nav {
     justify-content: center;
     max-width: 1200px;
     width: 100%;
+    animation: fadeInDown 1s;
 }
 
 .nav-link {
@@ -166,6 +169,7 @@ nav {
     position: relative;
     cursor: pointer;
     white-space: nowrap;
+    text-align: center;
 }
 
 .nav-link:hover {
