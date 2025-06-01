@@ -5,20 +5,17 @@ import Footer from './components/footer/Footer';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './components/Home';
 import Principalreview from './components/principalreview/Principalreview';
- feature/Charman'sMessage
 import { ChairmanMessage } from './components/chairmanMessage/ChairmanMessage';
-
-
-
 import DegreeCollege from './degreeCollegePage/DegreeCollege';
- main
+import SchoolAdmissions from './components/admissions/SchoolAdmissions';
+import JrCollegeAdmissions from './components/admissions/JrCollegeAdmissions';
+import CollegeAdmissions from './components/admissions/CollegeAdmissions';
 
 const App = () => {
   const location = useLocation();
-
   // Paths where navbar should be hidden
   const hideNavbarPaths = ['/degreecollege', '/DegreeCollege']; // Include both cases for safety
-  const shouldHideNavbar = hideNavbarPaths.some(path => 
+  const shouldHideNavbar = hideNavbarPaths.some(path =>
     location.pathname.toLowerCase() === path.toLowerCase()
   );
 
@@ -29,11 +26,11 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/management" element={<OurManagement />} />
         <Route path="/OurPrincipalsView" element={<Principalreview />} />
-feature/Charman'sMessage
         <Route path="/ChairmanMessage" element={<ChairmanMessage />} />
-
         <Route path="/DegreeCollege" element={<DegreeCollege />} />
-main
+        <Route path="/SchoolAdmissions" element={<SchoolAdmissions />} />
+        <Route path="/JrCollegeAdmissions" element={<JrCollegeAdmissions />} />
+        <Route path="/CollegeAdmissions" element={<CollegeAdmissions />} />
       </Routes>
       <Footer />
     </>
