@@ -1,0 +1,158 @@
+/* Degree Navbar Styles */
+.degree-navbar-container {
+    width: 100%;
+    background-color: #fff;
+}
+
+.degree-marquee {
+    width: 100%;
+    overflow: hidden;
+    background-color: #b30000;
+    color: #fff;
+    white-space: nowrap;
+    padding: 2px 0;
+}
+
+.degree-marquee-content {
+    display: inline-block;
+    padding-right: 50px;
+    font-weight: bold;
+    animation: degree-marquee-scroll 20s linear infinite;
+}
+
+@keyframes degree-marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.degree-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    background-color: #fff;
+}
+
+.degree-navbar-header-container {
+    display: flex;
+}
+
+.degree-navbar-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.degree-logo-container {
+    height: 90px;
+    width: 90px;
+}
+
+.degree-logo {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.degree-title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.degree-school-name {
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+
+.degree-school-address {
+    font-size: 1rem;
+    margin: 0.3rem 0;
+    text-align: center;
+}
+
+.degree-menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.degree-nav-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    align-items: center;
+    width: 50%;
+}
+
+.degree-nav-link {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.degree-nav-link:hover {
+    color: #d32f2f;
+}
+
+.degree-navbar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.degree-navbar-overlay.active {
+    display: block;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .degree-menu-icon {
+        display: block;
+    }
+
+    .degree-nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 70%;
+        background-color: #fff;
+        flex-direction: column;
+        padding: 5rem 1rem;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        transition: left 0.3s ease;
+    }
+
+    .degree-nav-links.show {
+        left: 0;
+    }
+
+    .degree-school-name {
+        font-size: 1.1rem;
+    }
+
+    .degree-school-address {
+        font-size: 0.7rem;
+    }
+
+    .degree-logo-container {
+        height: 50px;
+        width: 50px;
+    }
+}

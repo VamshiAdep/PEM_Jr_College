@@ -23,7 +23,7 @@ const ContactUs = () => {
                     <div className="info-block">
                         <strong>📍 ADDRESS:</strong>
                         <p>
-                            <b>P.E.M High School & Jr College</b><br />
+                            <b>P.E.M High School & Degree College</b><br />
                             Fehnegoan, Kamatghar, Bhiwandi,<br />
                             Thane  - 421302
                         </p>

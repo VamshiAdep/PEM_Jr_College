@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import logo from '../assets/TSSS-Logo.jpg';
-import { href } from 'react-router-dom';
+import { FaChevronDown } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isAboutDropdownOpen, setAboutDropdownOpen] = useState(false);
@@ -92,7 +92,7 @@ const Navbar = () => {
                     <div className={`navbar-links ${isMenuOpen ? 'show' : ''}`}>
                         <a href="/" className="nav-link" onClick={closeMenu}>Home</a>
                         <div className="nav-link" onMouseEnter={toggleAboutDropdown} onMouseLeave={toggleAboutDropdown} >
-                            About Us
+                            About Us <FaChevronDown size={14} color="#000" />
                             {isAboutDropdownOpen && (
                                 <div className="dropdown-menu">
                                     <a href="#aboutus" className="dropdown-item" onClick={closeMenu}>About School</a>
@@ -106,7 +106,7 @@ const Navbar = () => {
                             )}
                         </div>
                         <div className="nav-link" onMouseEnter={toggleAcademicsDropdown} onMouseLeave={toggleAcademicsDropdown} >
-                            Academics
+                            Academics <FaChevronDown size={14} color="#000" />
                             {isAcademicsDropdownOpen && (
                                 <div className="dropdown-menu">
                                     <a href="#curriculum" className="dropdown-item" onClick={closeMenu}>Curriculum</a>
@@ -117,7 +117,7 @@ const Navbar = () => {
                             )}
                         </div>
                         <div className="nav-link" onMouseEnter={toggleWhyPEM} onMouseLeave={toggleWhyPEM} >
-                            Why P.E.M.
+                            Why P.E.M. <FaChevronDown size={14} color="#000" />
                             {isWhyPEM && (
                                 <div className="dropdown-menu">
                                     <a href="#curriculum" className="dropdown-item" onClick={closeMenu}>The Right Curriculum</a>
@@ -129,7 +129,7 @@ const Navbar = () => {
                             )}
                         </div>
                         <div className="nav-link" onMouseEnter={toggleAddmissionDropdown} onMouseLeave={toggleAddmissionDropdown} >
-                            Admissions
+                            Admissions <FaChevronDown size={14} color="#000" />
                             {isAddmissionDropdownOpen && (
                                 <div className="dropdown-menu">
                                     <a href="#Addmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Schools 2025-26</a>
@@ -138,7 +138,7 @@ const Navbar = () => {
                                 </div>
                             )}
                         </div>
-                        <a href="#DegreeCollege" className="nav-link" onClick={closeMenu}>Degree College</a>
+                        <a href="/degreecollege" className="nav-link" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Degree College</a>
                         <a href="#Blogs" className="nav-link" onClick={closeMenu}>Blogs</a>
                         <a href="#ContactUs" className="nav-link" onClick={closeMenu}>Contact Us</a>
                     </div>

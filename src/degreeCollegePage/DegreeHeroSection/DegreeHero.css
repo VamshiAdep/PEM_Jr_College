@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-single-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-single-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+        transform: scale(1.02);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.carousel-overlay-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    z-index: 2;
+}
+
+.carousel-left-overlay,
+.carousel-right-overlay {
+    width: 45%;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    animation: fadeInText 1.5s ease-in-out;
+}
+
+.carousel-left-overlay {
+    text-align: left;
+}
+
+.carousel-right-overlay {
+    text-align: right;
+}
+
+.admission-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.admission-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px 20px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.admission-form h2 {
+    color: rgb(255, 0, 0);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.admission-form input,
+.admission-form select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.admission-form button {
+    width: 100%;
+    background-color: #b30000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.admission-form button:hover {
+    background-color: #990000;
+}
+
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 3;
+    animation: fadeInDots 1.5s ease-in-out;
+}
+
+@keyframes fadeInDots {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-section {
+        height: 70vh;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    .carousel-overlay-container {
+        justify-content: space-between;
+        padding: 0 3%;
+    }
+
+    .carousel-left-overlay,
+    .carousel-right-overlay {
+        width: 50%;
+    }
+
+    .admission-form-container {
+        padding: 20px;
+    }
+
+    .admission-form {
+        padding: 20px 15px;
+    }
+
+    .admission-form h2 {
+        color: rgb(255, 0, 0);
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .admission-form input,
+    .admission-form select {
+        width: 100%;
+        padding: 8px 10px;
+        margin: 5px 0;
+        border-radius: 6px;
+        font-size: 0.8rem;
+    }
+
+    .admission-form button {
+        padding: 8px;
+    }
+}
+
+/* Mobiles Styles */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+    }
+
+    .hero-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .carousel-overlay-container {
+        padding: 0 2%;
+    }
+
+    .admission-form-container {
+        padding: 2px;
+    }
+
+    .admission-form {
+        padding: 8px 10px;
+    }
+
+    .admission-form h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .admission-form input,
+    .admission-form select {
+        padding: 3px 5px;
+        margin: 2px 0;
+        border-radius: 6px;
+        font-size: 0.6rem;
+    }
+
+    .admission-form button {
+        padding: 4px;
+    }
+
+    .dot {
+        height: 8px;
+        width: 8px;
+    }
+}
