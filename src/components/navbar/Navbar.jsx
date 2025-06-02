@@ -99,7 +99,7 @@ const Navbar = () => {
                                     <a href="/management" className="dropdown-item" onClick={closeMenu}>Our Management</a>
                                     <a href="/ChairmanMessage" className="dropdown-item" onClick={closeMenu}>Chairman's Messsage</a>
                                     <a href="/OurPrincipalsView" className="dropdown-item" onClick={closeMenu}>Principal's Desk</a>
-                                    <a href="#facility" className="dropdown-item" onClick={closeMenu}>P.E.M. Intiatives</a>
+                                    <a href="/Facility" className="dropdown-item" onClick={closeMenu}>P.E.M. Intiatives</a>
                                     <a href="#Awards" className="dropdown-item" onClick={closeMenu}>Awards</a>
                                     <a href="#SchoolBroucher" className="dropdown-item" onClick={closeMenu}>School Broucher</a>
                                 </div>
@@ -132,9 +132,9 @@ const Navbar = () => {
                             Admissions <FaChevronDown size={14} color="#000" />
                             {isAddmissionDropdownOpen && (
                                 <div className="dropdown-menu">
-                                    <a href="#Addmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Schools 2025-26</a>
-                                    <a href="#Addmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Jr College 2025-26</a>
-                                    <a href="#Addmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Dgr College 2025-26</a>
+                                    <a href="/SchoolAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Schools 2025-26</a>
+                                    <a href="/JrCollegeAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Jr College 2025-26</a>
+                                    <a href="/CollegeAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Dgr College 2025-26</a>
                                 </div>
                             )}
                         </div>
