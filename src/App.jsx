@@ -17,6 +17,12 @@ import Facility from './components/facility/Facility';
  
 
 
+import DegreeCollege from './degreeCollegePage/DegreeCollege';
+import SchoolBroucher from './components/schoolbroucher/SchoolBroucher';
+import Award from './components/award/Award';
+
+
+
 const App = () => {
   const location = useLocation();
   // Paths where navbar should be hidden
@@ -43,7 +49,10 @@ const App = () => {
         <Route path="/ChairmanMessage" element={<ChairmanMessage />} />
  <Route path="/Facility" element={<Facility />} />
         <Route path="/DegreeCollege" element={<DegreeCollege />} />
-        
+
+        <Route path="/Broucher" element={<SchoolBroucher />} />
+        <Route path="/Awards" element={<Award />} />
+
 
 
       </Routes>
