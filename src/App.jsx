@@ -5,20 +5,22 @@ import Footer from './components/footer/Footer';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './components/Home';
 import Principalreview from './components/principalreview/Principalreview';
- feature/Charman'sMessage
+
 import { ChairmanMessage } from './components/chairmanMessage/ChairmanMessage';
 
 
 
 import DegreeCollege from './degreeCollegePage/DegreeCollege';
- main
+import SchoolBroucher from './components/schoolbroucher/SchoolBroucher';
+import Award from './components/award/Award';
+
 
 const App = () => {
   const location = useLocation();
 
   // Paths where navbar should be hidden
   const hideNavbarPaths = ['/degreecollege', '/DegreeCollege']; // Include both cases for safety
-  const shouldHideNavbar = hideNavbarPaths.some(path => 
+  const shouldHideNavbar = hideNavbarPaths.some(path =>
     location.pathname.toLowerCase() === path.toLowerCase()
   );
 
@@ -29,11 +31,15 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/management" element={<OurManagement />} />
         <Route path="/OurPrincipalsView" element={<Principalreview />} />
-feature/Charman'sMessage
+
         <Route path="/ChairmanMessage" element={<ChairmanMessage />} />
 
         <Route path="/DegreeCollege" element={<DegreeCollege />} />
-main
+
+        <Route path="/Broucher" element={<SchoolBroucher />} />
+        <Route path="/Awards" element={<Award />} />
+
+
       </Routes>
       <Footer />
     </>
