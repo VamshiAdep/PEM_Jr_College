@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-weight: 400;
-       font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
 }
 
 html,
@@ -11,9 +11,15 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
-h1, h2, h3, nav, .menu-item {
-  font-weight: 600; 
+
+h1,
+h2,
+h3,
+nav,
+.menu-item {
+    font-weight: 600;
 }
+
 :root {
     --primary-color: #d32f2f;
     --accent-color: #f9a825;
@@ -45,12 +51,13 @@ h1, h2, h3, nav, .menu-item {
 .marquee-wrapper {
     display: flex;
     width: max-content;
-    animation: marquee-scroll 20s linear infinite;
+    animation: marquee-scroll 35s linear infinite;
 }
 
 .marquee {
     display: inline-block;
     padding-right: 40px;
+    font-weight: bold;
     /* font-weight: bold; */
 }
 
@@ -63,13 +70,17 @@ h1, h2, h3, nav, .menu-item {
         transform: translateX(-50%);
     }
 }
-.main{
+
+.main {
     padding-top: 120px;
 }
+
 .navbar-main-container {
     width: 100%;
     background-color: #fff;
-    /* position: fixed; */
+
+    /* position: sticky; */
+
     top: 0;
     left: 0;
     width: 100%;

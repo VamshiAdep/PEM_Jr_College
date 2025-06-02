@@ -132,9 +132,9 @@ const Navbar = () => {
                             Admissions <FaChevronDown size={14} color="#000" />
                             {isAddmissionDropdownOpen && (
                                 <div className="dropdown-menu">
-                                    <a href="#Addmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Schools 2025-26</a>
-                                    <a href="#Addmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Jr College 2025-26</a>
-                                    <a href="#Addmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Dgr College 2025-26</a>
+                                    <a href="/SchoolAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Schools 2025-26</a>
+                                    <a href="/JrCollegeAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Jr College 2025-26</a>
+                                    <a href="/CollegeAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Dgr College 2025-26</a>
                                 </div>
                             )}
                         </div>
