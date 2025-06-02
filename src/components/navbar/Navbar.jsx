@@ -99,7 +99,7 @@ const Navbar = () => {
                                     <a href="/management" className="dropdown-item" onClick={closeMenu}>Our Management</a>
                                     <a href="/ChairmanMessage" className="dropdown-item" onClick={closeMenu}>Chairman's Messsage</a>
                                     <a href="/OurPrincipalsView" className="dropdown-item" onClick={closeMenu}>Principal's Desk</a>
-                                    <a href="#facility" className="dropdown-item" onClick={closeMenu}>P.E.M. Intiatives</a>
+                                    <a href="/Facility" className="dropdown-item" onClick={closeMenu}>P.E.M. Intiatives</a>
                                     <a href="#Awards" className="dropdown-item" onClick={closeMenu}>Awards</a>
                                     <a href="#SchoolBroucher" className="dropdown-item" onClick={closeMenu}>School Broucher</a>
                                 </div>

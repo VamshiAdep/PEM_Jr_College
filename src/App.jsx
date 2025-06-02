@@ -5,13 +5,13 @@ import Footer from './components/footer/Footer';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './components/Home';
 import Principalreview from './components/principalreview/Principalreview';
- feature/Charman'sMessage
 import { ChairmanMessage } from './components/chairmanMessage/ChairmanMessage';
 
 
 
 import DegreeCollege from './degreeCollegePage/DegreeCollege';
- main
+import Facility from './components/facility/Facility';
+ 
 
 const App = () => {
   const location = useLocation();
@@ -29,11 +29,12 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/management" element={<OurManagement />} />
         <Route path="/OurPrincipalsView" element={<Principalreview />} />
-feature/Charman'sMessage
-        <Route path="/ChairmanMessage" element={<ChairmanMessage />} />
 
+        <Route path="/ChairmanMessage" element={<ChairmanMessage />} />
+ <Route path="/Facility" element={<Facility />} />
         <Route path="/DegreeCollege" element={<DegreeCollege />} />
-main
+        
+
       </Routes>
       <Footer />
     </>
