@@ -23,8 +23,22 @@ const Navbar = () => {
                 <div className="marquee-wrapper">
                     <div className="marquee">
                         Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
                     <div className="marquee">
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
                 </div>
@@ -72,8 +86,8 @@ const Navbar = () => {
                                     <a href="/ChairmanMessage" className="dropdown-item" onClick={closeMenu}>Chairman's Message</a>
                                     <a href="/OurPrincipalsView" className="dropdown-item" onClick={closeMenu}>Principal's Desk</a>
                                     <a href="/Facility" className="dropdown-item" onClick={closeMenu}>P.E.M. Intiatives</a>
-                                    <a href="#Awards" className="dropdown-item" onClick={closeMenu}>Awards</a>
-                                    <a href="#SchoolBroucher" className="dropdown-item" onClick={closeMenu}>School Broucher</a>
+                                    <a href="/awards" className="dropdown-item" onClick={closeMenu}>Awards</a>
+                                    <a href="/Broucher" className="dropdown-item" onClick={closeMenu}>School Broucher</a>
 
                                 </div>
                             )}
