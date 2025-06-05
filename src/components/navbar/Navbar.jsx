@@ -10,6 +10,9 @@ const Navbar = () => {
     const [isWhyPEM, setWhyPEM] = useState(false);
     const [isMenuOpen, setMenuOpen] = useState(false);
 
+    const isMobile = window.innerWidth <= 768;  // You can adjust 768px to match your mobile breakpoint
+
+
     const toggleAboutDropdown = () => setAboutDropdownOpen(!isAboutDropdownOpen);
     const toggleAddmissionDropdown = () => setAddmissionDropdownOpen(!isAddmissionDropdownOpen);
     const toggleWhyPEM = () => setWhyPEM(!isWhyPEM);
@@ -44,7 +47,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <nav>
+            <nav className='navbar-header-container'>
                 <div className="navbar-header">
                     <div className="navbar-title">
                         <div className="navbar-title-conatainer">
@@ -71,13 +74,17 @@ const Navbar = () => {
                 <div className="navbar-navigation">
                     <div className="menu-icon" onClick={toggleMenu}>
                         ☰
+                        <p style={{ fontSize: '0.7rem' }}>Menu</p>
                     </div>
                     <div className={`navbar-overlay ${isMenuOpen ? 'active' : ''}`} onClick={closeMenu}></div>
 
                     <div className={`navbar-links ${isMenuOpen ? 'show' : ''}`}>
                         <a href="/" className="nav-link" onClick={closeMenu}>Home</a>
 
-                        <div className="nav-link" onMouseEnter={toggleAboutDropdown} onMouseLeave={toggleAboutDropdown}>
+                        <div className="nav-link"
+                            onMouseEnter={toggleAboutDropdown} onMouseLeave={toggleAboutDropdown}
+                            onClick={isMobile ? toggleAboutDropdown : undefined}
+                        >
                             About Us <FaChevronDown size={14} color="#000" />
                             {isAboutDropdownOpen && (
                                 <div className="dropdown-menu">
@@ -88,48 +95,55 @@ const Navbar = () => {
                                     <a href="/Facility" className="dropdown-item" onClick={closeMenu}>P.E.M. Intiatives</a>
                                     <a href="/awards" className="dropdown-item" onClick={closeMenu}>Awards</a>
                                     <a href="/Broucher" className="dropdown-item" onClick={closeMenu}>School Broucher</a>
-
                                 </div>
                             )}
                         </div>
 
-                        <div className="nav-link" onMouseEnter={toggleAcademicsDropdown} onMouseLeave={toggleAcademicsDropdown}>
+                        <div className="nav-link"
+                            onMouseEnter={toggleAcademicsDropdown} onMouseLeave={toggleAcademicsDropdown}
+                            onClick={isMobile ? toggleAcademicsDropdown : undefined}
+                        >
                             Academics <FaChevronDown size={14} color="#000" />
                             {isAcademicsDropdownOpen && (
                                 <div className="dropdown-menu">
-                                    <a href="#curriculum" className="dropdown-item" onClick={closeMenu}>Curriculum</a>
+                                    <a href="/RightCurriculum" className="dropdown-item" onClick={closeMenu}>Curriculum</a>
                                     <a href="#toppers" className="dropdown-item" onClick={closeMenu}>Toppers</a>
-                                    <a href="#circulars" className="dropdown-item" onClick={closeMenu}>Circulars</a>
-                                    <a href="#newsletter" className="dropdown-item" onClick={closeMenu}>Newsletter</a>
+                                    <a href="#Calender" className="dropdown-item" onClick={closeMenu}>Calender</a>
                                 </div>
                             )}
                         </div>
 
-                        <div className="nav-link" onMouseEnter={toggleWhyPEM} onMouseLeave={toggleWhyPEM}>
+                        <div className="nav-link"
+                            onMouseEnter={toggleWhyPEM} onMouseLeave={toggleWhyPEM}
+                            onClick={isMobile ? toggleWhyPEM : undefined}
+                        >
                             Why P.E.M. <FaChevronDown size={14} color="#000" />
                             {isWhyPEM && (
                                 <div className="dropdown-menu">
-                                    <a href="#curriculum" className="dropdown-item" onClick={closeMenu}>The Right Curriculum</a>
-                                    <a href="#toppers" className="dropdown-item" onClick={closeMenu}>The Right Faculty</a>
-                                    <a href="#circulars" className="dropdown-item" onClick={closeMenu}>The School Facilities</a>
-                                    <a href="#newsletter" className="dropdown-item" onClick={closeMenu}>The Right Capability</a>
+                                    <a href="/RightCurriculum" className="dropdown-item" onClick={closeMenu}>The Right Curriculum</a>
+                                    <a href="/RightFaculty" className="dropdown-item" onClick={closeMenu}>The Right Faculty</a>
+                                    <a href="/SchoolFacilities" className="dropdown-item" onClick={closeMenu}>The School Facilities</a>
+                                    <a href="/RightCapability" className="dropdown-item" onClick={closeMenu}>The Right Capability</a>
                                 </div>
                             )}
                         </div>
 
-                        <div className="nav-link" onMouseEnter={toggleAddmissionDropdown} onMouseLeave={toggleAddmissionDropdown}>
+                        <div className="nav-link"
+                            onMouseEnter={toggleAddmissionDropdown} onMouseLeave={toggleAddmissionDropdown}
+                            onClick={isMobile ? toggleAddmissionDropdown : undefined}
+                        >
                             Admissions <FaChevronDown size={14} color="#000" />
                             {isAddmissionDropdownOpen && (
                                 <div className="dropdown-menu">
-                                    <a href="/SchoolAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Schools 2025-26</a>
-                                    <a href="/JrCollegeAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Jr College 2025-26</a>
-                                    <a href="/CollegeAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions Open For Dgr College 2025-26</a>
+                                    <a href="/SchoolAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions For Schools 2025-26</a>
+                                    <a href="/JrCollegeAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions For Jr College 2025-26</a>
+                                    <a href="/CollegeAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions For Dgr College 2025-26</a>
                                 </div>
                             )}
                         </div>
 
                         <a href="/degreecollege" className="nav-link" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Degree College</a>
-                        <a href="#Blogs" className="nav-link" onClick={closeMenu}>Blogs</a>
+                        <a href="/Blog" className="nav-link" onClick={closeMenu}>Blogs</a>
                         <a href="#ContactUs" className="nav-link" onClick={closeMenu}>Contact Us</a>
                     </div>
                 </div>

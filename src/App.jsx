@@ -12,6 +12,11 @@ import SchoolAdmissions from './components/admissions/SchoolAdmissions';
 import Facility from './components/facility/Facility';
 import SchoolBroucher from './components/schoolbroucher/SchoolBroucher';
 import Award from './components/award/Award';
+import BlogPage from './components/blog/BlogPage';
+import RightCurriculum from './components/curriculum/RightCurriculum';
+import RightFaculty from './faculty/RightFaculty';
+import SchoolFacilities from './components/SchoolFacilities/SchoolFacilities';
+import RightCapability from './components/RightCapability/RightCapability';
 
 
 
@@ -19,7 +24,11 @@ const App = () => {
   const location = useLocation();
   // Paths where navbar should be hidden
   const hideNavbarPaths = ['/degreecollege', '/DegreeCollege']; // Include both cases for safety
+  const hideFooterPaths = ['/degreecollege', '/DegreeCollege']; // Include both cases for safety
   const shouldHideNavbar = hideNavbarPaths.some(path =>
+    location.pathname.toLowerCase() === path.toLowerCase()
+  );
+  const shouldHideFooter = hideFooterPaths.some(path =>
     location.pathname.toLowerCase() === path.toLowerCase()
   );
 
@@ -38,11 +47,13 @@ const App = () => {
         <Route path="/Facility" element={<Facility />} />
         <Route path="/Broucher" element={<SchoolBroucher />} />
         <Route path="/Awards" element={<Award />} />
-
-
-
+        <Route path="/Blog" element={<BlogPage />} />
+        <Route path="/RightCurriculum" element={<RightCurriculum />} />
+        <Route path="/RightFaculty" element={<RightFaculty />} />
+        <Route path="/SchoolFacilities" element={<SchoolFacilities />} />
+        <Route path="/RightCapability" element={<RightCapability />} />
       </Routes>
-      <Footer />
+      {!shouldHideFooter && <Footer />}
     </>
   );
 };

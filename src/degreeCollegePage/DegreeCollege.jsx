@@ -4,7 +4,8 @@ import About from './About/About'
 import DegreeHero from './DegreeHeroSection/DegreeHero'
 import Programs from './Program/Programs'
 import Campus from './Campus/Campus'
-import ContactUs from '../components/contactUs/ContactUs'
+import DegreeFooter from './DegreeFooter/DegreeFooter'
+import DegreeContactUs from './DegreeContactUs/DegreeContactUs'
 
 const DegreeCollege = () => {
     return (
@@ -21,8 +22,9 @@ const DegreeCollege = () => {
                 <Campus />
             </div>
             <div id="contactUs">
-                <ContactUs />
+                <DegreeContactUs />
             </div>
+            <DegreeFooter />
         </div>
     )
 }

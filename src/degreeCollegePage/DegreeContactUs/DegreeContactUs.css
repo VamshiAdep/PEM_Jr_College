@@ -1,0 +1,110 @@
+.degree-contact-section {
+    /* background: linear-gradient(to right, #fce7f3, #e0f2fe); */
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-bottom: 2rem;
+}
+
+.degree-contact-container {
+    display: flex;
+    background-color: #ffffff;
+    padding: 0;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    width: 90vw;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.degree-map-container {
+    flex: 1;
+    min-width: 250px;
+}
+
+.degree-contact-info {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+}
+
+.degree-contact-info h2 {
+    margin-bottom: 5px;
+    color: #212EA0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.degree-contact-info p {
+    color: #374151;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.degree-info-block strong {
+    color: #212EA0;
+}
+
+.degree-info-block p {
+    margin: 6px 0 12px;
+    color: #1f2937;
+}
+
+.degree-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.degree-contact-form input,
+.degree-contact-form textarea {
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.degree-contact-form input:focus,
+.degree-contact-form textarea:focus {
+    border-color: #212EA0;
+    outline: none;
+}
+
+.degree-contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.degree-contact-form button {
+    background-color: #212EA0;
+    color: white;
+    font-weight: 600;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.degree-contact-form button:hover {
+    background-color: #1b257b;
+}
+
+@media (max-width: 768px) {
+    .degree-contact-container {
+        flex-direction: column;
+    }
+
+    .degree-map-container {
+        height: 300px;
+    }
+}

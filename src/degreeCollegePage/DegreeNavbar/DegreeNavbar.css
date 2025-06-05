@@ -1,23 +1,44 @@
 /* Degree Navbar Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #d32f2f;
+    --accent-color: #f9a825;
+    --text-color: #000;
+}
+
+/* Common Styles */
 .degree-navbar-container {
     width: 100%;
     background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .degree-marquee {
     width: 100%;
     overflow: hidden;
-    background-color: #b30000;
+    background-color: #212EA0;
     color: #fff;
     white-space: nowrap;
+    box-sizing: border-box;
     padding: 2px 0;
 }
 
 .degree-marquee-content {
     display: inline-block;
-    padding-right: 50px;
+    padding-right: 40px;
+    font-size: 1rem;
     font-weight: bold;
-    animation: degree-marquee-scroll 20s linear infinite;
+    animation: degree-marquee-scroll 35s linear infinite;
 }
 
 @keyframes degree-marquee-scroll {
@@ -32,25 +53,28 @@
 
 .degree-navbar {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.degree-navbar-header {
+    display: flex;
     justify-content: space-between;
-    padding: 0.5rem 2rem;
+    align-items: center;
+    padding: 1rem 2rem;
     background-color: #fff;
 }
 
 .degree-navbar-header-container {
     display: flex;
-}
-
-.degree-navbar-header {
-    display: flex;
     align-items: center;
-    gap: 20px;
-    width: 50%;
+    justify-content: space-between;
 }
 
 .degree-logo-container {
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 80px;
+    flex-shrink: 0;
 }
 
 .degree-logo {
@@ -62,67 +86,100 @@
 .degree-title-container {
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 .degree-school-name {
-    color: #000;
+    color: var(--text-color);
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0;
-    text-align: center;
 }
 
 .degree-school-address {
     font-size: 1rem;
     margin: 0.3rem 0;
-    text-align: center;
 }
 
 .degree-menu-icon {
     display: none;
     font-size: 2rem;
     cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+}
+
+.degree-navbar-navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 0.5rem 2rem;
 }
 
 .degree-nav-links {
     display: flex;
-    justify-content: flex-end;
     gap: 2rem;
     align-items: center;
-    width: 50%;
+    justify-content: center;
+    margin-right: 2rem;
 }
 
 .degree-nav-link {
-    color: #000;
+    color: var(--text-color);
     font-weight: 600;
     font-size: 1.3rem;
     text-decoration: none;
     transition: color 0.3s;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .degree-nav-link:hover {
-    color: #d32f2f;
-}
-
-.degree-navbar-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-.degree-navbar-overlay.active {
-    display: block;
+    color: var(--primary-color);
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+    .degree-navbar-header {
+        padding: 0.5rem 1rem;
+        position: relative;
+    }
+
+    .degree-navbar-header-container {
+        gap: 10px;
+        align-items: center;
+    }
+
+    .degree-title-container {
+        text-align: left;
+    }
+
+    .degree-school-name {
+        font-size: 0.8rem;
+    }
+
+    .degree-school-address {
+        font-size: 0.5rem;
+    }
+
+    .degree-logo-container {
+        height: 50px;
+        width: 50px;
+    }
+
+    .degree-navbar-navigation {
+        background-color: #fff;
+        padding: 0.5rem 1rem;
+        justify-content: flex-end;
+    }
+
     .degree-menu-icon {
         display: block;
+        margin-top: 0.8rem;
     }
 
     .degree-nav-links {
@@ -137,22 +194,75 @@
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
         z-index: 1000;
         transition: left 0.3s ease;
+        justify-content: flex-start;
+        gap: 1rem;
     }
 
     .degree-nav-links.show {
         left: 0;
     }
 
-    .degree-school-name {
-        font-size: 1.1rem;
+    .degree-navbar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
     }
 
-    .degree-school-address {
-        font-size: 0.7rem;
+    .degree-navbar-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .degree-nav-link {
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
+        width: 100%;
+    }
+
+    .degree-marquee {
+        padding: 2px 0;
+    }
+
+    .degree-marquee-content {
+        font-size: 0.6rem;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .degree-navbar-header {
+        padding: 0.5rem 1.5rem;
     }
 
     .degree-logo-container {
-        height: 50px;
-        width: 50px;
+        height: 70px;
+        width: 70px;
+    }
+
+    .degree-school-name {
+        font-size: 1.5rem;
+    }
+
+    .degree-school-address {
+        font-size: 0.9rem;
+    }
+
+    .degree-nav-links {
+        gap: 1.5rem;
+    }
+
+    .degree-nav-link {
+        font-size: 1.2rem;
+    }
+
+    .degree-marquee-content {
+        font-size: 0.8rem;
     }
 }

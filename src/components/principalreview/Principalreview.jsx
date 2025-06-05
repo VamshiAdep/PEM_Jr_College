@@ -1,7 +1,7 @@
 import React from 'react';
 import './pincipalreview.css';
 import SecondaryHM from '../assets/SecondaryHM.png'
-import More from'../assets/More.png'
+import More from '../assets/More.png'
 
 const Principalreview = () => {
     const Principals = [
@@ -18,17 +18,13 @@ const Principalreview = () => {
             image: SecondaryHM,
         },
         {
-            name: "Mr. More",
+            name: "Mr. More sir",
             positon: "College principal",
             message: "Committed to academic excellence and holistic development of every student.",
-            image:More ,
+            image: More,
         },
 
     ];
-
-
-
-
 
     return (
         <div className='main-container'>

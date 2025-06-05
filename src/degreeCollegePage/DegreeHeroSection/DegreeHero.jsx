@@ -39,8 +39,8 @@ const DegreeHero = () => {
                             <h1 className="hero-title">Welcome to P.E.M Degree College, Bhiwandi</h1>
                         </div>
                         <div className="carousel-right-overlay">
-                            <div class="admission-form-container">
-                                <form class="admission-form">
+                            <div class="degree-admission-form-container">
+                                <form class="degree-admission-form">
                                     <h2>Admissions Open for <br /> 2025-26</h2>
 
                                     <input type="text" placeholder="Student Name*" required />

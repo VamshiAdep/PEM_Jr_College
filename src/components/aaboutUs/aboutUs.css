@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 .about-page {
@@ -12,7 +12,7 @@
     margin-top: 20px;
     font-family: 'Segoe UI', sans-serif;
     animation: fadeIn 0.8s ease-in-out;
-    height: 95vh;
+    height: 90vh;
 }
 
 .about-header {
@@ -146,7 +146,9 @@
 @media(max-width: 768px) {
 
     .about-page {
-        height: 65vh;
+        height: 75vh;
+        margin-top: 5px;
+
     }
 
     .about-header h1 {

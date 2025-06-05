@@ -105,7 +105,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* max-width: 1200px; */
     width: 100%;
 }
 
@@ -167,7 +166,16 @@ nav {
     max-width: 1200px;
     width: 100%;
     animation: fadeInDown 1s;
+    left: 100%;
+    transition: left 0.3s ease;
 }
+/* 
+.navbar-links.show {
+    left: 30%;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+} */
 
 .nav-link {
     color: #000;
@@ -179,6 +187,12 @@ nav {
     cursor: pointer;
     white-space: nowrap;
     text-align: center;
+}
+
+.navbar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    backdrop-filter: blur(3px);
 }
 
 .nav-link:hover {
@@ -211,6 +225,28 @@ nav {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+
+    .navbar-main-container {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+    }
+
+    .navbar-header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20
+    }
+
+    .navbar-title {
+        flex-direction: column;
+        width: 85%;
+    }
+
     .marquee {
         padding-right: 20px;
         font-size: 10px;
@@ -225,16 +261,16 @@ nav {
     }
 
     .navbar-header {
-        padding: 0.5rem 1rem;
+        padding: 0.2rem 0rem;
         position: relative;
     }
 
     .navbar-brand {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
     }
 
     .navbar-adress {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 
     .image-container {
@@ -243,6 +279,8 @@ nav {
     }
 
     .navbar-navigation {
+        width: 10%;
+        background-color: #fff;
         padding: 0.5rem 1rem;
         justify-content: flex-end;
     }
@@ -252,16 +290,15 @@ nav {
         top: 0;
         left: -100%;
         height: 100vh;
-        width: 70%;
+        width: 63%;
         background-color: #fff;
         flex-direction: column;
-        padding: 5rem 1rem;
+        padding: 1rem 0rem;
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
         z-index: 1000;
         transition: left 0.3s ease;
         justify-content: flex-start;
         gap: 1rem;
-        max-width: none;
     }
 
     .navbar-links.show {
