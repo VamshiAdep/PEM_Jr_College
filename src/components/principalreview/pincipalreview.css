@@ -50,6 +50,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
+  overflow: hidden;
 }
 
 .principal-card {
@@ -135,15 +136,17 @@
   }
 
   .name {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .position {
-    font-size: 12px;
+    font-size: 10px;
+    margin-bottom: 0.2rem;
   }
 
   .message {
-    font-size: 12px;
+    font-size: 10px;
+    margin-top: 0px;
   }
 
   .profile-pic {

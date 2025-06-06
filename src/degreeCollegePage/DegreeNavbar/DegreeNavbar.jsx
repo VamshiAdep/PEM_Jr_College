@@ -51,7 +51,8 @@ const DegreeNavbar = () => {
                         </div>
                     </div>
                     <div className="degree-menu-icon" onClick={toggleMenu}>
-                        ☰
+                        <p> ☰</p>
+                        <p style={{ fontSize: '0.7rem' }}>Menu</p>
                     </div>
                     <div className={`degree-navbar-overlay ${isMenuOpen ? 'active' : ''}`} onClick={closeMenu}></div>
                     <div className={`degree-nav-links ${isMenuOpen ? 'show' : ''}`}>

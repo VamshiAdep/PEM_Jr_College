@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    border-radius: 0 !important;
 }
 
 .carousel-single-wrapper {
@@ -24,6 +25,7 @@
     height: 100%;
     object-fit: cover;
     animation: fadeIn 1.2s ease-in-out;
+    border-radius: 0 !important;
 }
 
 @keyframes fadeIn {
@@ -53,17 +55,18 @@
 
 .carousel-left-overlay,
 .carousel-right-overlay {
-    width: 45%;
     color: white;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
     animation: fadeInText 1.5s ease-in-out;
 }
 
 .carousel-left-overlay {
+    width: 45%;
     text-align: left;
 }
 
 .carousel-right-overlay {
+    width: 45%;
     text-align: right;
 }
 
@@ -117,7 +120,6 @@
 .admission-form button:hover {
     background-color: #990000;
 }
-
 
 @keyframes fadeInText {
     from {
@@ -182,18 +184,18 @@
 
     .hero-title {
         font-size: 2rem;
-        font-weight: 700;
-        margin-bottom: 0.5rem;
     }
 
     .carousel-overlay-container {
-        justify-content: space-between;
-        padding: 0 3%;
+        padding: 0 0.2%;
     }
 
-    .carousel-left-overlay,
+    .carousel-left-overlay {
+        width: 40%;
+    }
+
     .carousel-right-overlay {
-        width: 50%;
+        width: 60%;
     }
 
     .admission-form-container {
@@ -204,15 +206,8 @@
         padding: 20px 15px;
     }
 
-    .admission-form h2 {
-        color: rgb(255, 0, 0);
-        font-size: 1.8rem;
-        margin-bottom: 20px;
-    }
-
     .admission-form input,
     .admission-form select {
-        width: 100%;
         padding: 8px 10px;
         margin: 5px 0;
         border-radius: 6px;
@@ -224,20 +219,33 @@
     }
 }
 
-/* Mobiles Styles */
+/* Mobile Styles */
 @media (max-width: 768px) {
     .hero-section {
         height: 60vh;
     }
 
     .hero-title {
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
+        font-size: 1rem;
     }
 
     .carousel-overlay-container {
-        padding: 0 2%;
+        padding: 0 0.2%;
+    }
+
+    .carousel-left-overlay,
+    .carousel-right-overlay {
+        flex: 1 1 50%;
+        width: auto;
+        /* Let flexbox manage the width */
+    }
+
+    .carousel-left-overlay {
+        text-align: left;
+    }
+
+    .carousel-right-overlay {
+        text-align: right;
     }
 
     .admission-form-container {

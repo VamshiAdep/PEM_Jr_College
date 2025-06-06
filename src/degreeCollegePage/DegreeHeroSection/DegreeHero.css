@@ -67,14 +67,14 @@
     text-align: right;
 }
 
-.admission-form-container {
+.degree-admission-form-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
 }
 
-.admission-form {
+.degree-admission-form {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 30px 20px;
     border-radius: 20px;
@@ -84,14 +84,14 @@
     text-align: center;
 }
 
-.admission-form h2 {
-    color: rgb(255, 0, 0);
+.degree-admission-form h2 {
+    color: #212EA0;
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
 
-.admission-form input,
-.admission-form select {
+.degree-admission-form input,
+.degree-admission-form select {
     width: 100%;
     padding: 12px 15px;
     margin: 8px 0;
@@ -101,9 +101,9 @@
     box-sizing: border-box;
 }
 
-.admission-form button {
+.degree-admission-form button {
     width: 100%;
-    background-color: #b30000;
+    background-color: #212EA0;
     color: white;
     padding: 12px;
     border: none;
@@ -114,8 +114,8 @@
     transition: background-color 0.3s ease;
 }
 
-.admission-form button:hover {
-    background-color: #990000;
+.degree-admission-form button:hover {
+    background-color: #1d288e;
 }
 
 
@@ -196,22 +196,22 @@
         width: 50%;
     }
 
-    .admission-form-container {
+    .degree-admission-form-container {
         padding: 20px;
     }
 
-    .admission-form {
+    .degree-admission-form {
         padding: 20px 15px;
     }
 
-    .admission-form h2 {
-        color: rgb(255, 0, 0);
+    .degree-degree-admission-form h2 {
+        color: #212EA0;
         font-size: 1.8rem;
         margin-bottom: 20px;
     }
 
-    .admission-form input,
-    .admission-form select {
+    .degree-admission-form input,
+    .degree-admission-form select {
         width: 100%;
         padding: 8px 10px;
         margin: 5px 0;
@@ -219,7 +219,7 @@
         font-size: 0.8rem;
     }
 
-    .admission-form button {
+    .degree-admission-form button {
         padding: 8px;
     }
 }
@@ -240,28 +240,28 @@
         padding: 0 2%;
     }
 
-    .admission-form-container {
+    .degree-admission-form-container {
         padding: 2px;
     }
 
-    .admission-form {
+    .degree-admission-form {
         padding: 8px 10px;
     }
 
-    .admission-form h2 {
+    .degree-admission-form h2 {
         font-size: 1rem;
         margin-bottom: 10px;
     }
 
-    .admission-form input,
-    .admission-form select {
+    .degree-admission-form input,
+    .degree-admission-form select {
         padding: 3px 5px;
         margin: 2px 0;
         border-radius: 6px;
         font-size: 0.6rem;
     }
 
-    .admission-form button {
+    .degree-admission-form button {
         padding: 4px;
     }
 
