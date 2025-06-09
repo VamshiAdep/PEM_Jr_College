@@ -2,27 +2,38 @@
     margin: 80px auto;
     width: 80%;
     text-align: center;
-
 }
 
 .gallery {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Adds spacing between images */
     margin-bottom: 40px;
 }
 
 .gallery img {
     width: 23%;
+    aspect-ratio: 4/3;
+    /* Maintains consistent width:height ratio */
+    object-fit: cover;
     border-radius: 10px;
+    height: auto;
+    /* Let aspect-ratio handle height */
 }
-@media (max-width: 800px){
-    .gallery{
+
+@media (max-width: 800px) {
+    .gallery {
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
-    .gallery img{
-        width: 48%;
-        margin-bottom: 25px;
+
+    .gallery img {
+        width: 80%;
+        margin-bottom: 20px;
     }
 
 }

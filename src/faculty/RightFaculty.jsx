@@ -2,85 +2,42 @@ import React from 'react';
 import './RightFaculty.css';
 import facultyGroupImage from '../components/assets/blogImages/Dahihandi.jpeg'; // Update path
 
-const facultyData = [
-    {
-        subject: 'Mathematics',
-        members: [
-            { name: 'Mr. A. Patel', experience: '10+ years' },
-            { name: 'Ms. B. Desai', experience: '8+ years' }
-        ]
-    },
-    {
-        subject: 'Science',
-        members: [
-            { name: 'Mr. C. Rathi', experience: '12+ years' },
-            { name: 'Ms. D. Sharma', experience: '9+ years' }
-        ]
-    },
-    {
-        subject: 'English',
-        members: [
-            { name: 'Ms. E. Mehta', experience: '7+ years' },
-            { name: 'Mr. F. Shah', experience: '11+ years' }
-        ]
-    },
-    {
-        subject: 'Social Studies',
-        members: [
-            { name: 'Mr. G. Kulkarni', experience: '13+ years' },
-            { name: 'Ms. H. Joshi', experience: '6+ years' }
-        ]
-    },
-    {
-        subject: 'Languages',
-        members: [
-            { name: 'Ms. I. Nair (Hindi)', experience: '8+ years' },
-            { name: 'Mr. J. Khan (Marathi)', experience: '9+ years' }
-        ]
-    },
-    {
-        subject: 'Commerce',
-        members: [
-            { name: 'Mr. K. Rao', experience: '15+ years' },
-            { name: 'Ms. L. Sinha', experience: '10+ years' }
-        ]
-    },
-    {
-        subject: 'Computer Science',
-        members: [
-            { name: 'Mr. M. Reddy', experience: '7+ years' },
-            { name: 'Ms. N. Kapoor', experience: '5+ years' }
-        ]
-    }
-];
-
 const RightFaculty = () => {
     return (
         <section className="faculty-section">
             <h1 className="faculty-title">Our Esteemed Faculty</h1>
+
+            {/* Secondary Section */}
             <div className="faculty-content">
-                <img src={facultyGroupImage} alt="Faculty Group" className="faculty-group-image" />
+                <img src={facultyGroupImage} alt="Secondary Faculty Group" className="faculty-group-image" />
                 <div className="faculty-description">
+                    <h2 className="faculty-subtitle">Secondary Section</h2>
                     <p>
-                        At P.E.M. High School and Degree College, our dedicated faculty brings together decades of collective experience. They are committed to guiding each student on their educational journey, nurturing their talents, and helping them excel both academically and personally. We believe in shaping confident, capable individuals who are ready to succeed in life.
+                        Our Secondary Section faculty at P.E.M. High School are experts in their respective fields and dedicated to building strong academic foundations. They guide students through the crucial secondary years, helping them excel in their SSC board examinations and beyond.
                     </p>
                 </div>
             </div>
 
-            <div className="faculty-list">
-                {facultyData.map((item, index) => (
-                    <div key={index} className="subject-card">
-                        <h3>{item.subject}</h3>
-                        <ul>
-                            {item.members.map((member, idx) => (
-                                <li key={idx}>
-                                    <span className="faculty-name">{member.name}</span>
-                                    <span className="faculty-experience">({member.experience} experience)</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                ))}
+            {/* Primary Section */}
+            <div className="faculty-content">
+                <img src={facultyGroupImage} alt="Primary Faculty Group" className="faculty-group-image" />
+                <div className="faculty-description">
+                    <h2 className="faculty-subtitle">Primary Section</h2>
+                    <p>
+                        The Primary Section faculty at P.E.M. High School focuses on nurturing young minds with care and creativity. They build essential skills and inspire curiosity, laying a solid foundation for lifelong learning.
+                    </p>
+                </div>
+            </div>
+
+            {/* College Section */}
+            <div className="faculty-content">
+                <img src={facultyGroupImage} alt="College Faculty Group" className="faculty-group-image" />
+                <div className="faculty-description">
+                    <h2 className="faculty-subtitle">Degree College Section</h2>
+                    <p>
+                        At P.E.M. Degree College, our dedicated faculty bring their expertise and experience to higher education, preparing students for university success and professional careers. They mentor and motivate students, fostering academic excellence and personal growth.
+                    </p>
+                </div>
             </div>
         </section>
     );

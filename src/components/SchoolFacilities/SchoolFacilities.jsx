@@ -1,6 +1,11 @@
 import React from 'react';
 import './SchoolFacilities.css';
 import Library from '../assets/schoolFacilityImages/Library.JPG'; // replace with your actual image
+import imageLab from '../assets/schoolImages/computterLab.jpg';
+import ChemistryLab from '../assets/schoolImages/ChemistryLab.JPG';
+import image1 from '../assets/schoolImages/schoolImage2.jpg';
+import yogaDayImage from '../assets/blogImages/Yogaday.jpeg'
+
 
 const facilities = [
     {
@@ -11,22 +16,22 @@ const facilities = [
     {
         title: "Science Labs",
         description: "State-of-the-art physics, chemistry, and biology labs with modern equipment.",
-        image: Library,
+        image: ChemistryLab,
     },
     {
         title: "Computer Labs",
         description: "High-speed internet and the latest computers to enhance digital literacy.",
-        image: Library,
+        image: imageLab,
     },
     {
         title: "Sports Grounds",
         description: "Expansive sports facilities including football, basketball, and cricket grounds.",
-        image: Library,
+        image: image1,
     },
     {
         title: "Auditorium",
         description: "A spacious auditorium for cultural events, competitions, and seminars.",
-        image: Library,
+        image: yogaDayImage,
     },
 ];
 

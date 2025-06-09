@@ -16,15 +16,36 @@ const RightCurriculum = () => {
           and emphasizes both theoretical knowledge and practical skills.
         </p>
         <ul className="curriculum-list">
-          <li>English (First and Second Language)</li>
-          <li>Marathi / Hindi (Second Language options)</li>
+          <li>English (First Language)</li>
+          <li>Hindi (Second Language )</li>
+          <li>Marathi (Third Language )</li>
           <li>Mathematics</li>
           <li>Science (Physics, Chemistry, Biology)</li>
           <li>Social Science (History, Geography, Civics)</li>
-          <li>Information Technology / Computer Science</li>
+          {/* <li>Information Technology / Computer Science</li> */}
           <li>Physical Education and Health</li>
-          <li>Environmental Studies</li>
-          <li>Optional Vocational Subjects</li>
+          {/* <li>Environmental Studies</li>
+          <li>Optional Vocational Subjects</li> */}
+        </ul>
+      </div>
+
+      {/* New Primary School Curriculum Block */}
+      <div className="curriculum-block">
+        <h2 className="curriculum-subtitle highschool">Primary School Curriculum</h2>
+        <p>
+          The Primary School curriculum at P.E.M. High School is designed to develop basic literacy, numeracy, and social skills
+          in young learners. It fosters curiosity and a love of learning, following the Maharashtra State Board guidelines.
+        </p>
+        <ul className="curriculum-list">
+          <li>English (First Language)</li>
+          <li>Hindi (Second Language)</li>
+          <li>Marathi (Third Language)</li>
+          <li>Mathematics</li>
+          {/* <li>Environmental Studies</li> */}
+          <li>General Science</li>
+          <li>Social Science</li>
+          <li>Physical Education and Health</li>
+          <li>Computer Literacy</li>
         </ul>
       </div>
 
@@ -38,13 +59,11 @@ const RightCurriculum = () => {
         <div className="degree-section">
           <h3 className="degree-subtitle">Bachelor of Science (BSc)</h3>
           <ul className="curriculum-list">
-            <li>Physics</li>
             <li>Chemistry</li>
-            <li>Mathematics</li>
-            <li>Computer Science</li>
-            <li>Microbiology</li>
-            <li>Biotechnology</li>
-            <li>Environmental Science</li>
+            {/* <li>Mathematics</li> */}
+            {/* <li>Computer Science</li> */}
+            <li>Zoology</li>
+            <li>Botany</li>
           </ul>
         </div>
 
@@ -53,23 +72,15 @@ const RightCurriculum = () => {
           <ul className="curriculum-list">
             <li>Financial Accounting</li>
             <li>Business Economics</li>
-            <li>Corporate Law</li>
             <li>Business Communication</li>
-            <li>Cost Accounting</li>
-            <li>Income Tax</li>
-            <li>Auditing</li>
           </ul>
         </div>
 
         <div className="degree-section">
           <h3 className="degree-subtitle">Bachelor of Arts (BA)</h3>
           <ul className="curriculum-list">
-            <li>Psychology</li>
-            <li>English Literature</li>
-            <li>Political Science</li>
             <li>History</li>
             <li>Economics</li>
-            <li>Sociology</li>
           </ul>
         </div>
       </div>

@@ -7,6 +7,7 @@ import yogaDayImage from '../assets/blogImages/Yogaday.jpeg'
 import ganapatiFestivalImage from '../assets/blogImages/Ganpaticel.jpeg'
 import Dahihandi from '../assets/blogImages/Dahihandi.jpeg'
 import DandiyaCele from '../assets/blogImages/DandiyaCele.jpeg'
+import scienceEx from '../assets/blogImages/scienceEx.jpg'
 const blogs = [
     {
         id: 1,
@@ -20,7 +21,7 @@ const blogs = [
         title: 'Science Exhibition 2025',
         date: 'May 20, 2025',
         excerpt: 'Explore the amazing science projects presented by our talented students at this year’s exhibition.',
-        image: culturalprogramme
+        image: scienceEx
     },
     {
         id: 3,

@@ -17,6 +17,7 @@ import RightCurriculum from './components/curriculum/RightCurriculum';
 import RightFaculty from './faculty/RightFaculty';
 import SchoolFacilities from './components/SchoolFacilities/SchoolFacilities';
 import RightCapability from './components/RightCapability/RightCapability';
+import Toppers from './components/toppers/Toppers';
 
 
 
@@ -52,6 +53,7 @@ const App = () => {
         <Route path="/RightFaculty" element={<RightFaculty />} />
         <Route path="/SchoolFacilities" element={<SchoolFacilities />} />
         <Route path="/RightCapability" element={<RightCapability />} />
+        <Route path="/Toppers" element={<Toppers />} />
       </Routes>
       {!shouldHideFooter && <Footer />}
     </>

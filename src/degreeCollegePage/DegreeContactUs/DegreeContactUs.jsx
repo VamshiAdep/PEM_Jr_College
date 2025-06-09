@@ -39,11 +39,12 @@ const DegreeContactUs = () => {
                         <p>+91 8655465553</p>
                     </div>
 
-                    <form className="degree-contact-form">
-                        <input type="text" placeholder="Name" required />
-                        <input type="email" placeholder="Email" required />
-                        <input type="text" placeholder="Subject" required />
-                        <textarea placeholder="Create a message here..." required></textarea>
+                    <form action="https://api.web3forms.com/submit" method="POST" className="degree-contact-form">
+                        <input type="hidden" name="access_key" value="ebf082eb-d2ee-4219-8a8d-deb70a2f1639"></input>
+                        <input type="text" name="name" placeholder="Name" required />
+                        <input type="email" name="email" placeholder="Email" required />
+                        <input type="text" name="text" placeholder="Subject" required />
+                        <textarea name="text" placeholder="Create a message here..." required></textarea>
                         <button type="submit">SEND MESSAGE</button>
                     </form>
                 </div>
