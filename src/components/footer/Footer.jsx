@@ -21,10 +21,10 @@ const Footer = () => {
           <div className="footer-section">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#">Admissions</a></li>
-              <li><a href="#">Academics</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/SchoolAdmissions">Admissions</a></li>
+              <li><a href="/Toppers">Academics</a></li>
+              <li><a href="/Blog">Events</a></li>
+              <li><a href="#ContactUs">Contact</a></li>
             </ul>
           </div>
 
@@ -32,7 +32,7 @@ const Footer = () => {
             <h3>Resources</h3>
             <ul>
               <li><a href="#">Library</a></li>
-              <li><a href="#">Parent Portal</a></li>
+              <li><a href="/RightCurriculum">Curriculum</a></li>
               <li><a href="#">Student Login</a></li>
               <li><a href="#">Careers</a></li>
             </ul>
