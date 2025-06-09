@@ -1,15 +1,16 @@
 import React from 'react';
 import './pincipalreview.css';
-import SecondaryHM from '../assets/SecondaryHM.png'
-import More from '../assets/More.png'
+import SecondaryHM from '../assets/priencpalImages/SecondaryHM.png'
+import More from '../assets/priencpalImages/More.png'
+import jagdeshHM from '../assets/priencpalImages/jagdeshHM.png'
 
 const Principalreview = () => {
     const Principals = [
         {
-            name: "Mr. Anil Kapoor",
+            name: "Mr. Jagdish Desale",
             positon: "Principal-primary Section",
             message: "My mission is to inspire and guide young minds to achieve their fullest potential.",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKuoW405uqrTQc4t9qDYQiFEnXrWrYEpa7Zw&s",
+            image: jagdeshHM,
         },
         {
             name: "MRS. Vidya Ghorpade",
@@ -18,7 +19,7 @@ const Principalreview = () => {
             image: SecondaryHM,
         },
         {
-            name: "Mr. More sir",
+            name: "Mr. Sanjay More",
             positon: "College principal",
             message: "Committed to academic excellence and holistic development of every student.",
             image: More,

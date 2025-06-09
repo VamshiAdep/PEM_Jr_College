@@ -107,7 +107,7 @@ const Navbar = () => {
                             {isAcademicsDropdownOpen && (
                                 <div className="dropdown-menu">
                                     <a href="/RightCurriculum" className="dropdown-item" onClick={closeMenu}>Curriculum</a>
-                                    <a href="#toppers" className="dropdown-item" onClick={closeMenu}>Toppers</a>
+                                    <a href="/Toppers" className="dropdown-item" onClick={closeMenu}>Toppers</a>
                                     <a href="#Calender" className="dropdown-item" onClick={closeMenu}>Calender</a>
                                 </div>
                             )}

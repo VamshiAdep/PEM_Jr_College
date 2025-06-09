@@ -148,7 +148,6 @@ const OurManagement = () => {
                                 <p className='member-name'>Shri. Kodam Rajaiah Nampelli</p>
                                 <p className='member-position'>Jt. Secretary</p>
                             </div>
-
                         </div>
                     </div>
                 </section>
@@ -158,6 +157,13 @@ const OurManagement = () => {
                     <h2 className="committee__title">School Committee</h2>
                     <div className="committee__grid">
                         <div className="committee__member-container">
+                            <div className="committee__member_card">
+                                <div className="committee__member">
+                                    <img src={KalyadapuBhumesh} alt="Kalyadapu Bhumesh" className="committee__image" />
+                                </div>
+                                <p className='member-name'>Shri. Kalyadapu Bhumesh Rajaiah</p>
+                                <p className='member-position'>President</p>
+                            </div>
                             <div className="committee__member_card">
                                 <div className="committee__member">
                                     <img src={BhairiNiskham} alt="Bhairi Niskham" className="committee__image" />
@@ -172,6 +178,8 @@ const OurManagement = () => {
                                 <p className='member-name'>Shri. Chenna Devarajam Hanumanthu</p>
                                 <p className='member-position'>Vice Chairman</p>
                             </div>
+                        </div>
+                        <div className="committee__member-container">
                             <div className="committee__member_card">
                                 <div className="committee__member committee__member--hide-mobile">
                                     <img src={SamalRavindra} alt="Samal Ravindra" className="committee__image" />
@@ -179,9 +187,6 @@ const OurManagement = () => {
                                 <p className='member-name'>Shri. Samal Ravindra Veeramallu</p>
                                 <p className='member-position'>Secretary</p>
                             </div>
-                        </div>
-                        <div className="committee__member-container">
-
                             <div className="committee__member_card">
                                 <div className="committee__member">
                                     <img src={BhairiGangadhar} alt="Bhairi Gangadhar" className="committee__image" />
