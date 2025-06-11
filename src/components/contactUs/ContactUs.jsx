@@ -39,11 +39,12 @@ const ContactUs = () => {
                         <p>+91 8655465553</p>
                     </div>
 
-                    <form className="contact-form">
-                        <input type="text" placeholder="Name" required />
-                        <input type="email" placeholder="Email" required />
-                        <input type="text" placeholder="Subject" required />
-                        <textarea placeholder="Create a message here..." required></textarea>
+                    <form action="https://api.web3forms.com/submit" method="POST" className="contact-form">
+                        <input type="hidden" name="access_key" value="99a36398-df7f-44fe-a4cd-eeccba85ab44"></input>
+                        <input name="Name" type="text" placeholder="Name" required />
+                        <input name="Email" type="email" placeholder="Email" required />
+                        <input name="Subject" type="text" placeholder="Subject" required />
+                        <textarea name="message" placeholder="Create a message here..." required></textarea>
                         <button type="submit">SEND MESSAGE</button>
                     </form>
                 </div>

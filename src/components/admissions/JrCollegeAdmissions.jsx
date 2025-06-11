@@ -17,26 +17,27 @@ const JrCollegeAdmissions = () => {
                         </div>
                         <div className="jc-adm-right-overlay">
                             <div className="jc-adm-form-container">
-                                <form className="jc-adm-form">
+                                <form action="https://api.web3forms.com/submit" method="POST" className="jc-adm-form">
+                                    <input type="hidden" name="access_key" value="99a36398-df7f-44fe-a4cd-eeccba85ab44"></input>
                                     <h2>Admissions Open for <br /> 2025-26</h2>
 
-                                    <input type="text" placeholder="Student Name*" required />
-                                    <select required>
+                                    <input name="Student Name" type="text" placeholder="Student Name*" required />
+                                    <select name="Course Name" required>
                                         <option value="" disabled selected>Choose Any Course</option>
                                         <option value="Science">Science</option>
                                         <option value="Commerce">Commerce</option>
                                         <option value="Arts">Arts</option>
                                     </select>
 
-                                    <select required>
+                                    <select name="Current Std" required>
                                         <option value="" disabled selected>Current Std</option>
                                         <option value="11th">11th</option>
                                         <option value="12th">12th</option>
                                     </select>
 
-                                    <input type="tel" placeholder="Mobile No*" required />
-                                    <input type="email" placeholder="Email ID" />
-                                    <input type="text" placeholder="City*" required />
+                                    <input name="Mobile No" type="tel" placeholder="Mobile No*" required />
+                                    <input name="Email" type="email" placeholder="Email ID" />
+                                    <input name="City" type="text" placeholder="City*" required />
 
                                     <button type="submit">Submit</button>
                                 </form>

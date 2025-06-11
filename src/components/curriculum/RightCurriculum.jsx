@@ -8,6 +8,26 @@ const RightCurriculum = () => {
         Curriculum Overview - P.E.M. High School & Degree College
       </h1>
 
+      {/* New Primary School Curriculum Block */}
+      <div className="curriculum-block">
+        <h2 className="curriculum-subtitle highschool">Primary School Curriculum</h2>
+        <p>
+          The Primary School curriculum at P.E.M. High School is designed to develop basic literacy, numeracy, and social skills
+          in young learners. It fosters curiosity and a love of learning, following the Maharashtra State Board guidelines.
+        </p>
+        <ul className="curriculum-list">
+          <li>English (First Language)</li>
+          <li>Hindi (Second Language)</li>
+          <li>Marathi (Third Language)</li>
+          <li>Mathematics</li>
+          {/* <li>Environmental Studies</li> */}
+          <li>General Science</li>
+          <li>Social Science</li>
+          <li>Physical Education and Health</li>
+          <li>Computer Literacy</li>
+        </ul>
+      </div>
+
       <div className="curriculum-block">
         <h2 className="curriculum-subtitle highschool">High School Curriculum (SSC)</h2>
         <p>
@@ -26,26 +46,6 @@ const RightCurriculum = () => {
           <li>Physical Education and Health</li>
           {/* <li>Environmental Studies</li>
           <li>Optional Vocational Subjects</li> */}
-        </ul>
-      </div>
-
-      {/* New Primary School Curriculum Block */}
-      <div className="curriculum-block">
-        <h2 className="curriculum-subtitle highschool">Primary School Curriculum</h2>
-        <p>
-          The Primary School curriculum at P.E.M. High School is designed to develop basic literacy, numeracy, and social skills
-          in young learners. It fosters curiosity and a love of learning, following the Maharashtra State Board guidelines.
-        </p>
-        <ul className="curriculum-list">
-          <li>English (First Language)</li>
-          <li>Hindi (Second Language)</li>
-          <li>Marathi (Third Language)</li>
-          <li>Mathematics</li>
-          {/* <li>Environmental Studies</li> */}
-          <li>General Science</li>
-          <li>Social Science</li>
-          <li>Physical Education and Health</li>
-          <li>Computer Literacy</li>
         </ul>
       </div>
 

@@ -13,13 +13,14 @@ const SchoolAdmissions = () => {
                         </div>
                         <div className="school-adm-right-overlay">
                             <div className="school-adm-form-container">
-                                <form className="school-adm-form">
+                                <form action="https://api.web3forms.com/submit" method="POST" className="school-adm-form">
+                                    <input type="hidden" name="access_key" value="99a36398-df7f-44fe-a4cd-eeccba85ab44"></input>
                                     <h2>Admissions Open for <br /> 2025-26</h2>
 
-                                    <input type="text" placeholder="Student Name*" required />
-                                    <input type="text" placeholder="Parent Name" />
+                                    <input name="Student Name" type="text" placeholder="Student Name*" required />
+                                    <input name="Parent Name" type="text" placeholder="Parent Name" />
 
-                                    <select required>
+                                    <select name="Current Std" required>
                                         <option value="" disabled selected>Current Std</option>
                                         <option value="Nursery">Nursery</option>
                                         <option value="LKG">LKG</option>
@@ -36,9 +37,9 @@ const SchoolAdmissions = () => {
                                         <option value="10th">10th</option>
                                     </select>
 
-                                    <input type="tel" placeholder="Mobile No*" required />
-                                    <input type="email" placeholder="Email ID" />
-                                    <input type="text" placeholder="City*" required />
+                                    <input name="Mobile No " type="tel" placeholder="Mobile No*" required />
+                                    <input name="Email " type="email" placeholder="Email ID" />
+                                    <input name="City" type="text" placeholder="City*" required />
 
                                     <button type="submit">Submit</button>
                                 </form>

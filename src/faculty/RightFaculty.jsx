@@ -1,22 +1,13 @@
 import React from 'react';
 import './RightFaculty.css';
-import facultyGroupImage from '../components/assets/blogImages/Dahihandi.jpeg'; // Update path
+import facultyGroupImage from '../components/assets/blogImages/Dahihandi.jpeg';
+import secondaryFaculty from '../components/assets/schoolImages/secondaryFaculty.jpg';
+import collegeFaculty from '../components/assets/schoolImages/collegeFaculty.png';
 
 const RightFaculty = () => {
     return (
         <section className="faculty-section">
             <h1 className="faculty-title">Our Esteemed Faculty</h1>
-
-            {/* Secondary Section */}
-            <div className="faculty-content">
-                <img src={facultyGroupImage} alt="Secondary Faculty Group" className="faculty-group-image" />
-                <div className="faculty-description">
-                    <h2 className="faculty-subtitle">Secondary Section</h2>
-                    <p>
-                        Our Secondary Section faculty at P.E.M. High School are experts in their respective fields and dedicated to building strong academic foundations. They guide students through the crucial secondary years, helping them excel in their SSC board examinations and beyond.
-                    </p>
-                </div>
-            </div>
 
             {/* Primary Section */}
             <div className="faculty-content">
@@ -29,9 +20,20 @@ const RightFaculty = () => {
                 </div>
             </div>
 
+            {/* Secondary Section */}
+            <div className="faculty-content">
+                <img src={secondaryFaculty} alt="Secondary Faculty Group" className="faculty-group-image" />
+                <div className="faculty-description">
+                    <h2 className="faculty-subtitle">Secondary Section</h2>
+                    <p>
+                        Our Secondary Section faculty at P.E.M. High School are experts in their respective fields and dedicated to building strong academic foundations. They guide students through the crucial secondary years, helping them excel in their SSC board examinations and beyond.
+                    </p>
+                </div>
+            </div>
+
             {/* College Section */}
             <div className="faculty-content">
-                <img src={facultyGroupImage} alt="College Faculty Group" className="faculty-group-image" />
+                <img src={collegeFaculty} alt="College Faculty Group" className="faculty-group-image" />
                 <div className="faculty-description">
                     <h2 className="faculty-subtitle">Degree College Section</h2>
                     <p>
