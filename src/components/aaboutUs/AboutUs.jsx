@@ -15,7 +15,7 @@ const AboutUs = () => {
                     <p>
                         To foster academic excellence, moral values, and holistic growth in every student. We are dedicated to providing a nurturing learning environment that builds character and skills for life.
                     </p>
-                    <button className="about-card-readMore">Read More...</button>
+                    {/* <button className="about-card-readMore">Read More...</button> */}
                 </div>
 
                 <div className="about-card">
@@ -23,7 +23,7 @@ const AboutUs = () => {
                     <p>
                         To become a center of excellence that shapes confident, curious, and compassionate individuals, well-equipped to face the challenges of the modern world.
                     </p>
-                    <button className="about-card-readMore">Read More...</button>
+                    {/* <button className="about-card-readMore">Read More...</button> */}
                 </div>
 
                 <div className="about-card">
@@ -35,7 +35,7 @@ const AboutUs = () => {
                         <li>Inclusive, safe learning environment</li>
                         <li>Strong ethical and cultural foundation</li>
                     </ul>
-                    <button className="about-card-readMore">Read More...</button>
+                    {/* <button className="about-card-readMore">Read More...</button> */}
                 </div>
             </div>
         </div>

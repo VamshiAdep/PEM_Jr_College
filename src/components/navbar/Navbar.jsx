@@ -59,7 +59,7 @@ const Navbar = () => {
                                 <p className="navbar-adress">Near Fehnegaon, Kamatghar, Bhiwandi, Thane 421302</p>
                             </div>
                         </div>
-                        <div className="navbar-title-conatainer">
+                        <div className="college-navbar-title-conatainer">
                             <div className="image-container">
                                 <img className="image" src={logo} alt="Logo" />
                             </div>
@@ -93,8 +93,8 @@ const Navbar = () => {
                                     <a href="/ChairmanMessage" className="dropdown-item" onClick={closeMenu}>Chairman's Message</a>
                                     <a href="/OurPrincipalsView" className="dropdown-item" onClick={closeMenu}>Principal's Desk</a>
                                     <a href="/Facility" className="dropdown-item" onClick={closeMenu}>P.E.M. Intiatives</a>
-                                    <a href="/awards" className="dropdown-item" onClick={closeMenu}>Awards</a>
-                                    <a href="/Broucher" className="dropdown-item" onClick={closeMenu}>School Broucher</a>
+                                    {/* <a href="/awards" className="dropdown-item" onClick={closeMenu}>Awards</a> */}
+                                    {/* <a href="/Broucher" className="dropdown-item" onClick={closeMenu}>School Broucher</a> */}
                                 </div>
                             )}
                         </div>
@@ -108,7 +108,7 @@ const Navbar = () => {
                                 <div className="dropdown-menu">
                                     <a href="/RightCurriculum" className="dropdown-item" onClick={closeMenu}>Curriculum</a>
                                     <a href="/Toppers" className="dropdown-item" onClick={closeMenu}>Toppers</a>
-                                    <a href="#Calender" className="dropdown-item" onClick={closeMenu}>Calender</a>
+                                    {/* <a href="#Calender" className="dropdown-item" onClick={closeMenu}>Calender</a> */}
                                 </div>
                             )}
                         </div>

@@ -11,7 +11,9 @@ const DegreeCollege = () => {
     return (
         <div>
             <DegreeNavbar />
-            <DegreeHero />
+            <div id="Hero">
+                <DegreeHero />
+            </div>
             <div id="Program">
                 <Programs />
             </div>

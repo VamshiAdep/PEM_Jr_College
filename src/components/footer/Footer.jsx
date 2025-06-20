@@ -20,7 +20,11 @@ const Footer = () => {
               <a href="#">
                 <FaInstagram />
               </a>
-              <a href="#">
+              <a
+                href="https://www.youtube.com/@vikasschool/featured"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaYoutube />
               </a>
               <a href="#">

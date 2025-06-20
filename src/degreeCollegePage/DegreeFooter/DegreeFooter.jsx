@@ -8,12 +8,18 @@ const DegreeFooter = () => {
             <div className="footer-content">
                 <div className="footer-section-container">
                     <div className="footer-section-about">
-                        <h1>P.E.M High School & Jr College</h1>
+                        <h1>P.E.M Degree College, Bhiwandi</h1>
                         <p>Shaping the future through education and excellence. Join us in building a better tomorrow.</p>
                         <div className="social-icons">
                             <a href="#"><FaFacebook /></a>
                             <a href="#"><FaInstagram /></a>
-                            <a href="#"><FaYoutube /></a>
+                            <a
+                                href="https://www.youtube.com/@vikasschool/featured"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaYoutube />
+                            </a>
                             <a href="#"><FaTwitter /></a>
                         </div>
                     </div>
@@ -21,10 +27,10 @@ const DegreeFooter = () => {
                     <div className="footer-section">
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="#">Admissions</a></li>
+                            <li><a href="#Hero">Admissions</a></li>
                             <li><a href="#">Academics</a></li>
                             <li><a href="#">Events</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#contactUs">Contact</a></li>
                         </ul>
                     </div>
 
@@ -33,7 +39,7 @@ const DegreeFooter = () => {
                         <ul>
                             <li><a href="#">Library</a></li>
                             <li><a href="#">Parent Portal</a></li>
-                            <li><a href="#">Student Login</a></li>
+                            {/* <li><a href="#">Student Login</a></li> */}
                             <li><a href="#">Careers</a></li>
                         </ul>
                     </div>

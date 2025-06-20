@@ -130,6 +130,10 @@ nav {
     display: flex;
 }
 
+.college-navbar-title-conatainer {
+    display: flex;
+}
+
 .navbar-brand {
     color: var(--text-color);
     font-size: 1.8rem;
@@ -156,6 +160,7 @@ nav {
     font-size: 2rem;
     cursor: pointer;
     z-index: 1001;
+    
 }
 
 .navbar-links {
@@ -169,6 +174,7 @@ nav {
     left: 100%;
     transition: left 0.3s ease;
 }
+
 /* 
 .navbar-links.show {
     left: 30%;
@@ -235,6 +241,10 @@ nav {
         z-index: 1000;
     }
 
+    .college-navbar-title-conatainer {
+        display: none;
+    }
+
     .navbar-header-container {
         display: flex;
         flex-direction: row;
@@ -256,7 +266,7 @@ nav {
         display: block;
         position: absolute;
         right: 20px;
-        top: 50%;
+        top: 40%;
         transform: translateY(-50%);
     }
 
