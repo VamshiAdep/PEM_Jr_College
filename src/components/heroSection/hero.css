@@ -4,6 +4,51 @@
     box-sizing: border-box;
 }
 
+/* Large Desktop / Monitor Styles */
+@media (min-width: 1440px) {
+    .hero-section {
+        height: 85vh;
+    }
+
+    .carousel-overlay-container {
+        padding: 0 5%;
+    }
+
+    .carousel-left-overlay,
+    .carousel-right-overlay {
+        max-width: 600px;
+    }
+
+    .hero-title {
+        font-size: 3.2rem;
+    }
+
+    .admission-form {
+        padding: 40px 30px;
+        max-width: 450px;
+    }
+
+    .admission-form h2 {
+        font-size: 2rem;
+    }
+
+    .admission-form input,
+    .admission-form select {
+        font-size: 1.1rem;
+        padding: 14px 18px;
+    }
+
+    .admission-form button {
+        padding: 14px;
+        font-size: 1.1rem;
+    }
+
+    .dot {
+        height: 14px;
+        width: 14px;
+    }
+}
+
 .hero-section {
     height: 90vh;
     display: flex;

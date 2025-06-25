@@ -109,16 +109,45 @@
 
 .image-Container {
     width: 100%;
-    height: auto;
-    max-width: 100%;
+    max-width: 600px;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
 }
 
 .image-Container img {
     width: 100%;
     height: auto;
     object-fit: contain;
+    border-radius: 8px;
+    display: block;
+    height: 100%;
+    max-height: 600px;
 }
+
+@media (min-width: 1441px) {
+    .jc-adm-overlay-container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 4%;
+    }
+
+    .jc-adm-left-overlay,
+    .jc-adm-right-overlay {
+        max-width: 600px;
+    }
+
+    .jc-adm-form {
+        max-width: 480px;
+    }
+
+    .image-Container {
+        max-width: 550px;
+    }
+}
+
+
 
 /* Tablet Styles */
 @media (min-width: 769px) and (max-width: 1024px) {

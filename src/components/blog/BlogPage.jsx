@@ -27,8 +27,8 @@ const blogs = [
         id: 3,
         title: 'Art & Culture Fest',
         date: 'April 15, 2025',
-        excerpt: 'Dive into the colorful celebration of art and culture at P.E.M. High School and Degree College.',
-        image: culturalprogramme
+        excerpt: 'A colorful blend of Rangoli, folk dance, and live painting brought India’s diverse heritage to life.',
+        image: 'https://kidactivities.net/wp-content/uploads/2018/02/image-164.jpg',
     },
     {
         id: 4,
