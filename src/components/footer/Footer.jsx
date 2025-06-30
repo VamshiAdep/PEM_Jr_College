@@ -55,16 +55,16 @@ const Footer = () => {
             <h3>Resources</h3>
             <ul>
               <li>
-                <a href="#">Library</a>
+                <a href="/SchoolFacilities">Facilities</a>
               </li>
               <li>
                 <a href="/RightCurriculum">Curriculum</a>
               </li>
               <li>
-                <a href="#">Student Login</a>
+                <a href="/RightFaculty">Faculty</a>
               </li>
               <li>
-                <a href="#">Careers</a>
+                <a href="/RightCapability">Capabilitys</a>
               </li>
             </ul>
           </div>
