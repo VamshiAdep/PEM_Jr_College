@@ -143,6 +143,7 @@ const Navbar = () => {
                         </div>
 
                         <a href="/degreecollege" className="nav-link" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Degree College</a>
+                        <a href="/CertificateApply" className="nav-link" onClick={closeMenu}>Certificate Apply</a>
                         <a href="/Blog" className="nav-link" onClick={closeMenu}>Blogs</a>
                         <a href="#ContactUs" className="nav-link" onClick={closeMenu}>Contact Us</a>
                     </div>

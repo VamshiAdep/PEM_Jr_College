@@ -36,7 +36,7 @@ const ContactUs = () => {
 
                     <div className="info-block">
                         <strong>📞 PHONE:</strong>
-                        <p>+91 8655465553</p>
+                        <p>+91 8624995228</p>
                     </div>
 
                     <form action="https://api.web3forms.com/submit" method="POST" className="contact-form">

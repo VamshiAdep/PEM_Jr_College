@@ -18,6 +18,7 @@ import RightFaculty from './faculty/RightFaculty';
 import SchoolFacilities from './components/SchoolFacilities/SchoolFacilities';
 import RightCapability from './components/RightCapability/RightCapability';
 import Toppers from './components/toppers/Toppers';
+import CertificateApply from './components/certificateApply/CertificateApply';
 
 
 
@@ -54,6 +55,7 @@ const App = () => {
         <Route path="/SchoolFacilities" element={<SchoolFacilities />} />
         <Route path="/RightCapability" element={<RightCapability />} />
         <Route path="/Toppers" element={<Toppers />} />
+        <Route path="/CertificateApply" element={<CertificateApply />} />
       </Routes>
       {!shouldHideFooter && <Footer />}
     </>

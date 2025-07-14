@@ -1,0 +1,113 @@
+.certificate-container {
+    max-width: 700px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.certificate-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.certificate-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.certificate-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.certificate-form input[type="text"],
+.certificate-form input[type="date"],
+.certificate-form textarea,
+.certificate-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.certificate-form textarea {
+    resize: vertical;
+}
+
+.checkbox-group,
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkbox-group input,
+.radio-group input {
+    margin-right: 8px;
+}
+
+.form-group.submit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-group.submit button {
+    padding: 12px 25px;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group.submit button:hover {
+    background-color: #0033aa;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .certificate-container {
+        padding: 20px;
+    }
+
+    .certificate-container h2 {
+        font-size: 1.3rem;
+    }
+
+    .form-group.submit button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .certificate-container {
+        padding: 15px;
+    }
+
+    .certificate-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .certificate-form label {
+        font-size: 0.9rem;
+    }
+
+    .certificate-form input,
+    .certificate-form select,
+    .certificate-form textarea {
+        font-size: 0.95rem;
+    }
+}
