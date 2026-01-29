@@ -50,7 +50,7 @@ const Hero = () => {
                                     <select name="Current Std" required>
                                         <option value="" disabled selected>Current Std</option>
                                         <option value="Nursery">Nursery</option>
-                                        <option value="LKG">LKG</option>
+                                        <option value="LKG">LKG</option> 
                                         <option value="UKG">UKG</option>
                                         <option value="1st">1st</option>
                                         <option value="2nd">2nd</option>
