@@ -25,24 +25,24 @@ const Navbar = () => {
             <div className="admission-marquee">
                 <div className="marquee-wrapper">
                     <div className="marquee">
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
                     <div className="marquee">
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
                 </div>
             </div>
@@ -135,9 +135,9 @@ const Navbar = () => {
                             Admissions <FaChevronDown size={14} color="#000" />
                             {isAddmissionDropdownOpen && (
                                 <div className="dropdown-menu">
-                                    <a href="/SchoolAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions For Schools 2025-26</a>
-                                    <a href="/JrCollegeAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions For Jr College 2025-26</a>
-                                    <a href="/CollegeAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions For Dgr College 2025-26</a>
+                                    <a href="/SchoolAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions For Schools 2026-2027</a>
+                                    <a href="/JrCollegeAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions For Jr College 2026-2027</a>
+                                    <a href="/CollegeAdmissions" className="dropdown-item" onClick={closeMenu}>Addmissions For Dgr College 2026-2027</a>
                                 </div>
                             )}
                         </div>

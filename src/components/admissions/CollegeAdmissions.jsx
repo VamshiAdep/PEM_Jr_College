@@ -17,7 +17,7 @@ const CollegeAdmissions = () => {
                             <div className="jc-adm-form-container">
                                 <form action="https://api.web3forms.com/submit" method="POST" className="jc-adm-form">
                                     <input type="hidden" name="access_key" value="99a36398-df7f-44fe-a4cd-eeccba85ab44"></input>
-                                    <h2>Admissions Open for <br /> 2025-26</h2>
+                                    <h2>Admissions Open for <br /> 2026-2027</h2>
 
                                     <input name="Student Name" type="text" placeholder="Student Name*" required />
                                     <select name="Course Name" required>

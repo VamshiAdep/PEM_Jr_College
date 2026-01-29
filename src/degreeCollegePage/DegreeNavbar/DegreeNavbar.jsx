@@ -18,24 +18,24 @@ const DegreeNavbar = () => {
         <div className="degree-navbar-container">
             <div className="degree-marquee">
                 <div className="degree-marquee-content">
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
                 <div className="degree-marquee-content">
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Admission Open for 2025-26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Admission Open for 2026-2027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
             </div>
 

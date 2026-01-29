@@ -16,8 +16,9 @@ import DandiyaCele from '../assets/blogImages/DandiyaCele.jpeg'
 
 const imagePaths = [image1, image2, image5, image4, imageLab, ChemistryLab, image3, DandiyaCele, picnicImage, yogaDayImage, independenceDayImage, Dahihandi];
 const videoIds = [
+    'FRqgCszT5VU',
+    'VDKwEJhof-I',
     'qLU4dpXP0B8',
-    'iuviq3yvUhc',
     'jzQSc584XZ8',
     'F1MaojJovbo'
 ];
