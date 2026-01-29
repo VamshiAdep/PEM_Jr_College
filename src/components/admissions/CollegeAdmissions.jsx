@@ -1,4 +1,3 @@
-import React from 'react'
 import collegeAddmission from '../assets/collegeAddmission.jpg'
 import './JrCollegeAdmissions.css'
 
@@ -10,7 +9,7 @@ const CollegeAdmissions = () => {
                     <div className='jc-adm-overlay-container'>
                         <div className="jc-adm-left-overlay">
                             <div className='image-Container'>
-                                <img src={collegeAddmission} />
+                                <img src={collegeAddmission} alt='image'/>
                             </div>
                         </div>
                         <div className="jc-adm-right-overlay">
