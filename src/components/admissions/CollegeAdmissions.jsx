@@ -9,7 +9,7 @@ const CollegeAdmissions = () => {
                     <div className='jc-adm-overlay-container'>
                         <div className="jc-adm-left-overlay">
                             <div className='image-Container'>
-                                <img src={collegeAddmission} alt='image'/>
+                                <img src={collegeAddmission} alt='image of a student'/>
                             </div>
                         </div>
                         <div className="jc-adm-right-overlay">

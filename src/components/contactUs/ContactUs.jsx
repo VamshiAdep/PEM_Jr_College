@@ -1,4 +1,3 @@
-import React from 'react';
 import './ContactUs.css';
 
 const ContactUs = () => {
@@ -8,6 +7,7 @@ const ContactUs = () => {
                 <div className="map-container">
                     <iframe
                         src="https://www.google.com/maps?q=P.E.M.+High+School+and+Jr+College,+Kamatghar,+Bhiwandi,+Maharashtra&output=embed"
+                        title="PEM High School Location"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import './navbar.css';
+import { useState } from 'react';
+import { FaChevronDown } from 'react-icons/fa';
 import logo from '../assets/TSSS-Logo.jpg';
-import { FaChevronDown, FaDownload } from 'react-icons/fa';
+import './navbar.css';
 
 const Navbar = () => {
     const [isAboutDropdownOpen, setAboutDropdownOpen] = useState(false);

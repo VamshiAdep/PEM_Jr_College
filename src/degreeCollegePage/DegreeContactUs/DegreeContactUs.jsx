@@ -1,4 +1,3 @@
-import React from 'react';
 import './DegreeContactUs.css';
 
 const DegreeContactUs = () => {
@@ -8,6 +7,7 @@ const DegreeContactUs = () => {
                 <div className="degree-map-container">
                     <iframe
                         src="https://www.google.com/maps?q=P.E.M.+High+School+and+Jr+College,+Kamatghar,+Bhiwandi,+Maharashtra&output=embed"
+                        title="Contact form iframe"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}

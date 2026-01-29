@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import './SchoolGallery.css';
-import image1 from '../assets/schoolImages/schoolImage2.jpg';
-import image2 from '../assets/schoolImages/schoolImage.jpg';
-import imageLab from '../assets/schoolImages/computterLab.jpg';
-import ChemistryLab from '../assets/schoolImages/ChemistryLab.JPG';
-import picnicImage from '../assets/schoolImages/picnicImage.jpeg';
+import { useState } from 'react';
+import Dahihandi from '../assets/blogImages/Dahihandi.jpeg';
+import DandiyaCele from '../assets/blogImages/DandiyaCele.jpeg';
+import independenceDayImage from '../assets/blogImages/indipendenceDay.jpg';
+import yogaDayImage from '../assets/blogImages/Yogaday.jpeg';
+import image5 from '../assets/carouselImages/image1.jpg';
 import image3 from '../assets/carouselImages/image3.jpg';
 import image4 from '../assets/carouselImages/image4.jpg';
-import image5 from '../assets/carouselImages/image1.jpg';
-import independenceDayImage from '../assets/blogImages/indipendenceDay.jpg'
-import yogaDayImage from '../assets/blogImages/Yogaday.jpeg'
-import Dahihandi from '../assets/blogImages/Dahihandi.jpeg'
-import DandiyaCele from '../assets/blogImages/DandiyaCele.jpeg'
+import ChemistryLab from '../assets/schoolImages/ChemistryLab.JPG';
+import imageLab from '../assets/schoolImages/computterLab.jpg';
+import picnicImage from '../assets/schoolImages/picnicImage.jpeg';
+import image2 from '../assets/schoolImages/schoolImage.jpg';
+import image1 from '../assets/schoolImages/schoolImage2.jpg';
+import './SchoolGallery.css';
 
 
 const imagePaths = [image1, image2, image5, image4, imageLab, ChemistryLab, image3, DandiyaCele, picnicImage, yogaDayImage, independenceDayImage, Dahihandi];

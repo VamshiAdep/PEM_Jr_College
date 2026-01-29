@@ -1,6 +1,5 @@
-import React from 'react'
-import './JrCollegeAdmissions.css'
 import JrCollegeAddmissionImage from '../assets/JrCollegeAddmissionImage.jpg'
+import './JrCollegeAdmissions.css'
 
 const JrCollegeAdmissions = () => {
     return (
@@ -12,7 +11,7 @@ const JrCollegeAdmissions = () => {
                             {/* <h1 className="jc-adm-title">Welcome to P.E.M High School & Jr College</h1>
                             <h2 className="jc-adm-subtitle">Addmissions For Junior College</h2> */}
                             <div className='image-Container'>
-                                <img src={JrCollegeAddmissionImage} />
+                                <img src={JrCollegeAddmissionImage} alt="Junior College admission poster"/>
                             </div>
                         </div>
                         <div className="jc-adm-right-overlay">

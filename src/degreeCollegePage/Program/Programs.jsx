@@ -1,11 +1,7 @@
-import React from 'react'
-import './programs.css'
-import program_1 from '../../components/assets/carouselImages/image2.jpg'
-import program_2 from '../../components/assets/carouselImages/image4.jpg'
-import program_3 from '../../components/assets/carouselImages/image3.jpg'
 import program_icon_1 from '../assets/program-icon-1.png'
 import program_icon_2 from '../assets/program-icon-2.png'
 import program_icon_3 from '../assets/program-icon-3.png'
+import './programs.css'
 
 
 
