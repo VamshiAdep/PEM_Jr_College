@@ -14,22 +14,20 @@ const Footer = () => {
               building a better tomorrow.
             </p>
             <div className="social-icons">
-              <a href="#">
+              <button>
                 <FaFacebook />
-              </a>
-              <a href="#">
+              </button>
+              <button>
                 <FaInstagram />
-              </a>
-              <a
-                href="https://www.youtube.com/@vikasschool/featured"
-                target="_blank"
-                rel="noopener noreferrer"
+              </button>
+              <button
+                onClick={() => window.open("https://www.youtube.com/@vikasschool/featured", "_blank")}
               >
                 <FaYoutube />
-              </a>
-              <a href="#">
+              </button>
+              <button>
                 <FaTwitter />
-              </a>
+              </button>
             </div>
           </div>
 
@@ -37,16 +35,16 @@ const Footer = () => {
             <h3>Quick Links</h3>
             <ul>
               <li>
-                <a href="/SchoolAdmissions">Admissions</a>
+                <button onClick={() => alert("Admissions section coming soon!")}>Admissions</button>
               </li>
               <li>
-                <a href="/Toppers">Academics</a>
+                <button onClick={() => alert("Academics section coming soon!")}>Academics</button>
               </li>
               <li>
-                <a href="/Blog">Events</a>
+                <button onClick={() => alert("Events section coming soon!")}>Events</button>
               </li>
               <li>
-                <a href="#ContactUs">Contact</a>
+                <button onClick={() => alert("Contact section coming soon!")}>Contact</button>
               </li>
             </ul>
           </div>
@@ -55,16 +53,16 @@ const Footer = () => {
             <h3>Resources</h3>
             <ul>
               <li>
-                <a href="/SchoolFacilities">Facilities</a>
+                <button onClick={() => alert("Facilities section coming soon!")}>Facilities</button>
               </li>
               <li>
-                <a href="/RightCurriculum">Curriculum</a>
+                <button onClick={() => alert("Curriculum section coming soon!")}>Curriculum</button>
               </li>
               <li>
-                <a href="/RightFaculty">Faculty</a>
+                <button onClick={() => alert("Faculty section coming soon!")}>Faculty</button>
               </li>
               <li>
-                <a href="/RightCapability">Capabilitys</a>
+                <button onClick={() => alert("Capabilities section coming soon!")}>Capabilities</button>
               </li>
             </ul>
           </div>

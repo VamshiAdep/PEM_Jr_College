@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import './DegreeNavbar.css';
+import { useState } from 'react';
 import logo from '../../components/assets/TSSS-Logo.jpg';
-import { Link } from 'react-router-dom';
+import './DegreeNavbar.css';
 
 const DegreeNavbar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -56,7 +55,7 @@ const DegreeNavbar = () => {
                     </div>
                     <div className={`degree-navbar-overlay ${isMenuOpen ? 'active' : ''}`} onClick={closeMenu}></div>
                     <div className={`degree-nav-links ${isMenuOpen ? 'show' : ''}`}>
-                        <a href="#" className="degree-nav-link" onClick={closeMenu}>Home</a>
+                        <a href="#Home" className="degree-nav-link" onClick={closeMenu}>Home</a>
                         <a href="#AboutUs" className="degree-nav-link" onClick={closeMenu}>About Us</a>
                         <a href="#Program" className="degree-nav-link" onClick={closeMenu}>Program</a>
                         <a href="#Campus" className="degree-nav-link" onClick={closeMenu}>Campus</a>

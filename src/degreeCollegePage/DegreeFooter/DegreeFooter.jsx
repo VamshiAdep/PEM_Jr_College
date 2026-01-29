@@ -3,7 +3,7 @@ import './DegreeFooter.css';
 
 const DegreeFooter = () => {
     return (
-        <footer className="digree-footer">
+        <footer className="degree-footer">
             <div className="footer-wave"></div>
             <div className="footer-content">
                 <div className="footer-section-container">
@@ -11,36 +11,39 @@ const DegreeFooter = () => {
                         <h1>P.E.M Degree College, Bhiwandi</h1>
                         <p>Shaping the future through education and excellence. Join us in building a better tomorrow.</p>
                         <div className="social-icons">
-                            <a href="#"><FaFacebook /></a>
-                            <a href="#"><FaInstagram /></a>
-                            <a
-                                href="https://www.youtube.com/@vikasschool/featured"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
+                            {/* Valid YouTube URL */}
+                            <a href="https://www.youtube.com/@vikasschool/featured" target="_blank" rel="noopener noreferrer">
                                 <FaYoutube />
                             </a>
-                            <a href="#"><FaTwitter /></a>
+                            {/* Placeholder buttons for other social media */}
+                            <button onClick={() => alert('Facebook link coming soon!')}>
+                                <FaFacebook />
+                            </button>
+                            <button onClick={() => alert('Instagram link coming soon!')}>
+                                <FaInstagram />
+                            </button>
+                            <button onClick={() => alert('Twitter link coming soon!')}>
+                                <FaTwitter />
+                            </button>
                         </div>
                     </div>
 
                     <div className="footer-section">
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="#Hero">Admissions</a></li>
-                            <li><a href="#">Academics</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#contactUs">Contact</a></li>
+                            <li><button onClick={() => alert('Admissions page coming soon!')}>Admissions</button></li>
+                            <li><button onClick={() => alert('Academics page coming soon!')}>Academics</button></li>
+                            <li><button onClick={() => alert('Events page coming soon!')}>Events</button></li>
+                            <li><button onClick={() => alert('Contact page coming soon!')}>Contact</button></li>
                         </ul>
                     </div>
 
                     <div className="footer-section">
                         <h3>Resources</h3>
                         <ul>
-                            <li><a href="#">Library</a></li>
-                            <li><a href="#">Parent Portal</a></li>
-                            {/* <li><a href="#">Student Login</a></li> */}
-                            <li><a href="#">Careers</a></li>
+                            <li><button onClick={() => alert('Library page coming soon!')}>Library</button></li>
+                            <li><button onClick={() => alert('Parent Portal page coming soon!')}>Parent Portal</button></li>
+                            <li><button onClick={() => alert('Careers page coming soon!')}>Careers</button></li>
                         </ul>
                     </div>
 
